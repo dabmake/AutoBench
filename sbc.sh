@@ -46,19 +46,14 @@ git clone https://github.com/phoronix-test-suite/phoronix-test-suite.git
  
 sudo apt-get install -y php-cli php-xml
 
-cd phoronix-test-suite
+#cd phoronix-test-suite
 
-sudo ./install-sh    
+sudo phoronix-test-suite/install-sh   
 
-cd ~/.phoronix-test-suite/test-suites
+PTS_SILENT_MODE=1 phoronix-test-suite
 
-git clone https://github.com/dabmake/MakeBench.git
+cp makebench2/suite-definition.xml ~/.phoronix-test-suite/test-suites
 
-cd MakeBench
 
-mv single-board-computer/suite-definition.xml ./
-
-cd ~
-
-PTS_SILENT_MODE=1 phoronix-test-suite benchmark MakeBench
+PTS_SILENT_MODE=1 phoronix-test-suite benchmark makebench2
 
