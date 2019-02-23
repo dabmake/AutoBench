@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.6.0m0-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>MakeBench2</Title>
+    <Version>1.0.0</Version>
+    <TestType>Other</TestType>
+    <Description>Test for Single Board Computer</Description>
+    <Maintainer>dab</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/compress-7zip-1.7.0</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
+  <Execute>
+    <Test>pts/c-ray-1.2.0</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
+  <Execute>
+    <Test>pts/openssl-1.11.0</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
+  <Execute>
+    <Test>pts/opencv-bench-1.0.0</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
+  <Execute>
+    <Test>pts/glmark2-1.1.0</Test>
+    <Arguments>-s 1920x1080</Arguments>
+    <Description>Resolution: 1920 x 1080</Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
+  <Execute>
+    <Test>pts/x264-2.5.0</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
+  <Execute>
+    <Test>pts/iozone-1.9.5</Test>
+    <Arguments>-r 64k -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Write Performance</Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
+  <Execute>
+    <Test>pts/iozone-1.9.5</Test>
+    <Arguments>-r 64k -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Read Performance</Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
+  <Execute>
+    <Test>pts/tinymembench-1.0.2</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
+  <Execute>
+    <Test>pts/numpy-1.0.5</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
+  <Execute>
+    <Test>pts/fio-1.11.5</Test>
+    <Arguments>randread libaio 0 1 64k</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory</Description>
+    <OverrideTestOptions></OverrideTestOptions>
+  </Execute>
+</PhoronixTestSuite>
