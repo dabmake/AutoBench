@@ -44,16 +44,17 @@ echo "Cloning Phoronix Test Suite"
 
 git clone https://github.com/phoronix-test-suite/phoronix-test-suite.git
  
-sudo apt-get install -y php-cli php-xml
+sudo apt-get install -y php-cli php-xml freeglut3-dev
 
-#cd phoronix-test-suite
+cd phoronix-test-suite
 
-sudo phoronix-test-suite/install-sh   
+sudo ./install-sh   
 
 PTS_SILENT_MODE=1 phoronix-test-suite
 
-cp makebench2/suite-definition.xml ~/.phoronix-test-suite/test-suites
+cd ..
 
+cp -r makebench2/suite-definition.xml ~/.phoronix-test-suite/test-suites/
 
 PTS_SILENT_MODE=1 phoronix-test-suite benchmark makebench2
 
