@@ -54,7 +54,7 @@ PTS_SILENT_MODE=1 phoronix-test-suite
 
 cd ..
 
-cp -r makebench2/suite-definition.xml ~/.phoronix-test-suite/test-suites/
+cp -r makebench2/ ~/.phoronix-test-suite/test-suites/
 
 PTS_SILENT_MODE=1 phoronix-test-suite benchmark makebench2
 
