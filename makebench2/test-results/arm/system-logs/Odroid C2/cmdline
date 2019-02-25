@@ -1,0 +1,1 @@
+root=UUID=adc5276f-0438-4ce7-8b66-9b036980dad2 rootwait rootfstype=ext4 panic=10 console=ttyAML0,115200 console=tty1 consoleblank=0 loglevel=1 ubootpart=55400000-01 usb-storage.quirks=0x2537:0x1066:u,0x2537:0x1068:u   cgroup_enable=memory swapaccount=1

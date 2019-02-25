@@ -1,0 +1,54 @@
+cpufrequtils 008: cpufreq-info (C) Dominik Brodowski 2004-2009
+Report errors and bugs to cpufreq@vger.kernel.org, please.
+analyzing CPU 0:
+  driver: scpi-cpufreq
+  CPUs which run at the same hardware frequency: 0 1 2 3
+  CPUs which need to have their frequency coordinated by software: 0 1 2 3
+  maximum transition latency: 200 us.
+  hardware limits: 100.0 MHz - 1.54 GHz
+  available frequency steps: 100.0 MHz, 250 MHz, 500 MHz, 1000 MHz, 1.30 GHz, 1.54 GHz
+  available cpufreq governors: conservative, userspace, powersave, ondemand, performance, schedutil
+  current policy: frequency should be within 500 MHz and 1.54 GHz.
+                  The governor "conservative" may decide which speed to use
+                  within this range.
+  current CPU frequency is 1.30 GHz (asserted by call to hardware).
+  cpufreq stats: 100.0 MHz:0.19%, 250 MHz:0.58%, 500 MHz:55.49%, 1000 MHz:4.06%, 1.30 GHz:1.41%, 1.54 GHz:38.26%  (77201)
+analyzing CPU 1:
+  driver: scpi-cpufreq
+  CPUs which run at the same hardware frequency: 0 1 2 3
+  CPUs which need to have their frequency coordinated by software: 0 1 2 3
+  maximum transition latency: 200 us.
+  hardware limits: 100.0 MHz - 1.54 GHz
+  available frequency steps: 100.0 MHz, 250 MHz, 500 MHz, 1000 MHz, 1.30 GHz, 1.54 GHz
+  available cpufreq governors: conservative, userspace, powersave, ondemand, performance, schedutil
+  current policy: frequency should be within 500 MHz and 1.54 GHz.
+                  The governor "conservative" may decide which speed to use
+                  within this range.
+  current CPU frequency is 1.30 GHz (asserted by call to hardware).
+  cpufreq stats: 100.0 MHz:0.19%, 250 MHz:0.58%, 500 MHz:55.49%, 1000 MHz:4.06%, 1.30 GHz:1.41%, 1.54 GHz:38.26%  (77201)
+analyzing CPU 2:
+  driver: scpi-cpufreq
+  CPUs which run at the same hardware frequency: 0 1 2 3
+  CPUs which need to have their frequency coordinated by software: 0 1 2 3
+  maximum transition latency: 200 us.
+  hardware limits: 100.0 MHz - 1.54 GHz
+  available frequency steps: 100.0 MHz, 250 MHz, 500 MHz, 1000 MHz, 1.30 GHz, 1.54 GHz
+  available cpufreq governors: conservative, userspace, powersave, ondemand, performance, schedutil
+  current policy: frequency should be within 500 MHz and 1.54 GHz.
+                  The governor "conservative" may decide which speed to use
+                  within this range.
+  current CPU frequency is 1.30 GHz (asserted by call to hardware).
+  cpufreq stats: 100.0 MHz:0.19%, 250 MHz:0.58%, 500 MHz:55.49%, 1000 MHz:4.06%, 1.30 GHz:1.41%, 1.54 GHz:38.26%  (77201)
+analyzing CPU 3:
+  driver: scpi-cpufreq
+  CPUs which run at the same hardware frequency: 0 1 2 3
+  CPUs which need to have their frequency coordinated by software: 0 1 2 3
+  maximum transition latency: 200 us.
+  hardware limits: 100.0 MHz - 1.54 GHz
+  available frequency steps: 100.0 MHz, 250 MHz, 500 MHz, 1000 MHz, 1.30 GHz, 1.54 GHz
+  available cpufreq governors: conservative, userspace, powersave, ondemand, performance, schedutil
+  current policy: frequency should be within 500 MHz and 1.54 GHz.
+                  The governor "conservative" may decide which speed to use
+                  within this range.
+  current CPU frequency is 1.30 GHz (asserted by call to hardware).
+  cpufreq stats: 100.0 MHz:0.19%, 250 MHz:0.58%, 500 MHz:55.49%, 1000 MHz:4.06%, 1.30 GHz:1.41%, 1.54 GHz:38.26%  (77201)

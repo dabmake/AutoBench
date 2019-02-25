@@ -1,0 +1,463 @@
+Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+Linux version 4.19.15-meson64 (root@armbian.com) (gcc version 7.2.1 20171011 (Linaro GCC 7.2-2017.11)) #5.71 SMP PREEMPT Wed Jan 16 18:20:26 CET 2019
+Machine model: Hardkernel ODROID-C2
+Reserved memory: created CMA memory pool at 0x0000000071800000, size 188 MiB
+OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+On node 0 totalpages: 518912
+  DMA32 zone: 8128 pages used for memmap
+  DMA32 zone: 0 pages reserved
+  DMA32 zone: 518912 pages, LIFO batch:63
+psci: probing for conduit method from DT.
+psci: PSCIv0.2 detected in firmware.
+psci: Using standard PSCI v0.2 function IDs
+psci: Trusted OS migration not required
+random: get_random_bytes called from start_kernel+0xa8/0x400 with crng_init=0
+percpu: Embedded 23 pages/cpu @(____ptrval____) s55704 r8192 d30312 u94208
+pcpu-alloc: s55704 r8192 d30312 u94208 alloc=23*4096
+pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+Detected VIPT I-cache on CPU0
+CPU features: enabling workaround for ARM erratum 843419
+CPU features: enabling workaround for ARM erratum 845719
+CPU features: detected: Kernel page table isolation (KPTI)
+Built 1 zonelists, mobility grouping on.  Total pages: 510784
+Kernel command line: root=UUID=adc5276f-0438-4ce7-8b66-9b036980dad2 rootwait rootfstype=ext4 panic=10 console=ttyAML0,115200 console=tty1 consoleblank=0 loglevel=1 ubootpart=55400000-01 usb-storage.quirks=0x2537:0x1066:u,0x2537:0x1068:u   cgroup_enable=memory swapaccount=1
+Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes)
+Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes)
+Memory: 1822596K/2075648K available (10558K kernel code, 688K rwdata, 3016K rodata, 576K init, 395K bss, 60540K reserved, 192512K cma-reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+rcu: Preemptible hierarchical RCU implementation.
+rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=4.
+	Tasks RCU enabled.
+rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+GIC: Using split EOI/Deactivate mode
+irq_meson_gpio: 133 to 8 gpio interrupt mux initialized
+arch_timer: cp15 timer(s) running at 24.00MHz (phys).
+clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+Console: colour dummy device 80x25
+console [tty1] enabled
+Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=96000)
+pid_max: default: 32768 minimum: 301
+Security Framework initialized
+AppArmor: AppArmor disabled by boot time parameter
+Mount-cache hash table entries: 4096 (order: 3, 32768 bytes)
+Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes)
+ASID allocator initialised with 32768 entries
+rcu: Hierarchical SRCU implementation.
+smp: Bringing up secondary CPUs ...
+Detected VIPT I-cache on CPU1
+CPU1: Booted secondary processor 0x0000000001 [0x410fd034]
+Detected VIPT I-cache on CPU2
+CPU2: Booted secondary processor 0x0000000002 [0x410fd034]
+Detected VIPT I-cache on CPU3
+CPU3: Booted secondary processor 0x0000000003 [0x410fd034]
+smp: Brought up 1 node, 4 CPUs
+SMP: Total of 4 processors activated.
+CPU features: detected: 32-bit EL0 Support
+CPU: All CPU(s) started at EL2
+alternatives: patching kernel code
+devtmpfs: initialized
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+futex hash table entries: 1024 (order: 4, 65536 bytes)
+xor: measuring software checksum speed
+   8regs     :  2949.000 MB/sec
+   8regs_prefetch:  2627.000 MB/sec
+   32regs    :  3624.000 MB/sec
+   32regs_prefetch:  3046.000 MB/sec
+xor: using function: 32regs (3624.000 MB/sec)
+pinctrl core: initialized pinctrl subsystem
+NET: Registered protocol family 16
+audit: initializing netlink subsys (disabled)
+audit: type=2000 audit(0.312:1): state=initialized audit_enabled=0 res=1
+cpuidle: using governor menu
+vdso: 2 pages (1 code @ (____ptrval____), 1 data @ (____ptrval____))
+hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+DMA: preallocated 2048 KiB pool for atomic allocations
+HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+cryptd: max_cpu_qlen set to 1000
+raid6: int64x1  gen()   561 MB/s
+raid6: int64x1  xor()   564 MB/s
+raid6: int64x2  gen()   866 MB/s
+raid6: int64x2  xor()   771 MB/s
+raid6: int64x4  gen()  1331 MB/s
+raid6: int64x4  xor()   979 MB/s
+raid6: int64x8  gen()  1258 MB/s
+raid6: int64x8  xor()   961 MB/s
+raid6: neonx1   gen()   929 MB/s
+raid6: neonx1   xor()  1091 MB/s
+raid6: neonx2   gen()  1488 MB/s
+raid6: neonx2   xor()  1545 MB/s
+raid6: neonx4   gen()  1933 MB/s
+raid6: neonx4   xor()  1850 MB/s
+raid6: neonx8   gen()  2111 MB/s
+raid6: neonx8   xor()  1966 MB/s
+raid6: using algorithm neonx8 gen() 2111 MB/s
+raid6: .... xor() 1966 MB/s, rmw enabled
+raid6: using neon recovery algorithm
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+clocksource: Switched to clocksource arch_sys_counter
+VFS: Disk quotas dquot_6.6.0
+VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+NET: Registered protocol family 2
+tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes)
+TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+TCP bind hash table entries: 16384 (order: 6, 262144 bytes)
+TCP: Hash tables configured (established 16384 bind 16384)
+UDP hash table entries: 1024 (order: 3, 32768 bytes)
+UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+Trying to unpack rootfs image as initramfs...
+Freeing initrd memory: 8084K
+hw perfevents: enabled with armv8_cortex_a53 PMU driver, 7 counters available
+kvm [1]: 8-bit VMID
+kvm [1]: vgic interrupt IRQ1
+kvm [1]: Hyp mode initialized successfully
+Initialise system trusted keyrings
+workingset: timestamp_bits=46 max_order=19 bucket_order=0
+zbud: loaded
+NFS: Registering the id_resolver key type
+Key type id_resolver registered
+Key type id_legacy registered
+nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+JFS: nTxBlock = 8192, nTxLock = 65536
+SGI XFS with ACLs, security attributes, realtime, no debug enabled
+Key type asymmetric registered
+Asymmetric key parser 'x509' registered
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+io scheduler mq-deadline registered
+io scheduler kyber registered
+io scheduler bfq registered
+GPIO line 501 (usb-hub-reset) hogged as output/high
+soc soc0: Amlogic Meson GXBB (S905) Revision 1f:b (0:1) Detected
+console [ttyAML0] enabled
+brd: module loaded
+loop: module loaded
+libphy: Fixed MDIO Bus: probed
+tun: Universal TUN/TAP device driver, 1.6
+meson8b-dwmac c9410000.ethernet: PTP uses main clock
+meson8b-dwmac c9410000.ethernet: no reset control found
+meson8b-dwmac c9410000.ethernet: User ID: 0x11, Synopsys ID: 0x37
+meson8b-dwmac c9410000.ethernet: 	DWMAC1000
+meson8b-dwmac c9410000.ethernet: DMA HW capability register supported
+meson8b-dwmac c9410000.ethernet: RX Checksum Offload Engine supported
+meson8b-dwmac c9410000.ethernet: COE Type 2
+meson8b-dwmac c9410000.ethernet: TX Checksum insertion supported
+meson8b-dwmac c9410000.ethernet: Wake-Up On Lan supported
+meson8b-dwmac c9410000.ethernet: Normal descriptors
+meson8b-dwmac c9410000.ethernet: Ring mode enabled
+meson8b-dwmac c9410000.ethernet: Enable RX Mitigation via HW Watchdog Timer
+libphy: stmmac: probed
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci-platform: EHCI generic platform driver
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+ohci-platform: OHCI generic platform driver
+usbcore: registered new interface driver usb-storage
+mousedev: PS/2 mouse device common for all mice
+i2c /dev entries driver
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+Synopsys Designware Multimedia Card Interface Driver
+meson-gx-mmc d0074000.mmc: Linked as a consumer to regulator.2
+meson-gx-mmc d0074000.mmc: Linked as a consumer to regulator.1
+meson-gx-mmc d0074000.mmc: allocated mmc-pwrseq
+sdhci-pltfm: SDHCI platform and OF driver helper
+ledtrig-cpu: registered to indicate activity on CPUs
+meson-sm: secure-monitor enabled
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+platform-mhu c883c404.mailbox: Platform MHU Mailbox registered
+meson-saradc c1108680.adc: Linked as a consumer to regulator.1
+NET: Registered protocol family 10
+Segment Routing with IPv6
+NET: Registered protocol family 17
+Key type dns_resolver registered
+registered taskstats version 1
+Loading compiled-in X.509 certificates
+zswap: loaded using pool lzo/zbud
+Btrfs loaded, crc32c=crc32c-generic
+Key type encrypted registered
+phy phy-c0000000.phy.0: Linked as a consumer to regulator.3
+phy phy-c0000020.phy.1: Linked as a consumer to regulator.3
+dwc2 c9000000.usb: c9000000.usb supply vusb_d not found, using dummy regulator
+dwc2 c9000000.usb: Linked as a consumer to regulator.0
+dwc2 c9000000.usb: c9000000.usb supply vusb_a not found, using dummy regulator
+phy phy-c0000000.phy.0: USB ID detect failed!
+phy phy-c0000000.phy.0: phy poweron failed --> -22
+dwc2: probe of c9000000.usb failed with error -22
+dwc2 c9100000.usb: c9100000.usb supply vusb_d not found, using dummy regulator
+dwc2 c9100000.usb: Linked as a consumer to regulator.0
+dwc2 c9100000.usb: c9100000.usb supply vusb_a not found, using dummy regulator
+dwc2 c9100000.usb: dwc2_check_params: Invalid parameter lpm=1
+dwc2 c9100000.usb: dwc2_check_params: Invalid parameter lpm_clock_gating=1
+dwc2 c9100000.usb: dwc2_check_params: Invalid parameter besl=1
+dwc2 c9100000.usb: dwc2_check_params: Invalid parameter hird_threshold_en=1
+dwc2 c9100000.usb: DWC OTG Controller
+dwc2 c9100000.usb: new USB bus registered, assigned bus number 1
+dwc2 c9100000.usb: irq 36, io mem 0xc9100000
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 4.19
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: DWC OTG Controller
+usb usb1: Manufacturer: Linux 4.19.15-meson64 dwc2_hsotg
+usb usb1: SerialNumber: c9100000.usb
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+meson-gx-mmc d0072000.mmc: Linked as a consumer to regulator.4
+meson-gx-mmc d0072000.mmc: Linked as a consumer to regulator.5
+meson-gx-mmc d0072000.mmc: Got CD GPIO
+scpi_protocol scpi: SCP Protocol legacy pre-1.0 firmware
+hctosys: unable to open rtc device (rtc0)
+of_cfs_init
+of_cfs_init: OK
+VCC3V3: disabling
+Freeing unused kernel memory: 576K
+Run /init as init process
+mmc1: new high speed SDHC card at address 0007
+mmcblk1: mmc1:0007 SD32G 29.0 GiB 
+ mmcblk1: p1
+meson-drm d0100000.vpu: Queued 2 outputs on vpu
+[drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[drm] No driver support for vblank timestamp query.
+meson-drm d0100000.vpu: CVBS Output connector not available
+random: fast init done
+meson-dw-hdmi c883a000.hdmi-tx: Detected HDMI TX controller v2.01a with HDCP (meson_dw_hdmi_phy)
+meson-dw-hdmi c883a000.hdmi-tx: registered DesignWare HDMI I2C bus driver
+meson-drm d0100000.vpu: bound c883a000.hdmi-tx (ops meson_dw_hdmi_ops [meson_dw_hdmi])
+[drm] Initialized meson 1.0.0 20161109 for d0100000.vpu on minor 0
+usb 1-1: new high-speed USB device number 2 using dwc2
+usb 1-1: New USB device found, idVendor=05e3, idProduct=0610, bcdDevice=32.98
+usb 1-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+usb 1-1: Product: USB2.0 Hub
+hub 1-1:1.0: USB hub found
+hub 1-1:1.0: 4 ports detected
+Console: switching to colour frame buffer device 240x67
+meson-drm d0100000.vpu: fb0: DRM emulated frame buffer device
+usb 1-1.3: new high-speed USB device number 3 using dwc2
+usb 1-1.3: New USB device found, idVendor=148f, idProduct=5572, bcdDevice= 1.01
+usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 1-1.3: Product: 802.11 n WLAN
+usb 1-1.3: Manufacturer: Ralink
+usb 1-1.3: SerialNumber: 1.0
+random: crng init done
+EXT4-fs (mmcblk1p1): mounted filesystem with writeback data mode. Opts: (null)
+systemd[1]: System time before build time, advancing clock.
+systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+systemd[1]: Detected architecture arm64.
+systemd[1]: Set hostname to <odroidc2>.
+systemd[1]: Reached target Swap.
+systemd[1]: Reached target User and Group Name Lookups.
+systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+systemd[1]: Created slice User and Session Slice.
+systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+systemd[1]: Reached target System Time Synchronized.
+systemd[1]: Reached target Local Encrypted Volumes.
+EXT4-fs (mmcblk1p1): re-mounted. Opts: commit=600,errors=remount-ro
+systemd-journald[1130]: Received request to flush runtime journal from PID 1
+zram: Added device: zram0
+zram: Added device: zram1
+zram: Added device: zram2
+zram: Added device: zram3
+zram: Added device: zram4
+zram: Added device: zram5
+zram1: detected capacity change from 0 to 259043328
+meson-audio-core c1105400.audio: Failed to create c1105400.audio debugfs directory
+Registered IR keymap rc-empty
+rc rc0: meson-ir as /devices/platform/soc/c8100000.bus/c8100580.ir/rc/rc0
+input: meson-ir as /devices/platform/soc/c8100000.bus/c8100580.ir/rc/rc0/input0
+meson-ir c8100580.ir: receiver initialized
+Adding 252968k swap on /dev/zram1.  Priority:5 extents:1 across:252968k SSFS
+zram2: detected capacity change from 0 to 259043328
+media: Linux media interface: v0.10
+Adding 252968k swap on /dev/zram2.  Priority:5 extents:1 across:252968k SSFS
+zram3: detected capacity change from 0 to 259043328
+Adding 252968k swap on /dev/zram3.  Priority:5 extents:1 across:252968k SSFS
+zram4: detected capacity change from 0 to 259043328
+Adding 252968k swap on /dev/zram4.  Priority:5 extents:1 across:252968k SSFS
+videodev: Linux video capture interface: v2.00
+spidev spi0.0: probing from DT
+spidev spi0.1: probing from DT
+asoc-simple-card sound: i2s-hifi <-> meson-i2s-dai.3.auto mapping ok
+zram0: detected capacity change from 0 to 52428800
+cfg80211: Loading compiled-in X.509 certificates for regulatory database
+cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+EXT4-fs (zram0): mounted filesystem without journal. Opts: discard
+usb 1-1.3: reset high-speed USB device number 3 using dwc2
+ieee80211 phy0: rt2x00_set_rt: Info - RT chipset 5592, rev 0222 detected
+ieee80211 phy0: rt2x00_set_rf: Info - RF chipset 000f detected
+ieee80211 phy0: Selected rate control algorithm 'minstrel_ht'
+usbcore: registered new interface driver rt2800usb
+rt2800usb 1-1.3:1.0 wlx7cdd9079f6a1: renamed from wlan0
+IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+RTL8211F Gigabit Ethernet stmmac-0:00: attached PHY driver [RTL8211F Gigabit Ethernet] (mii_bus:phy_addr=stmmac-0:00, irq=37)
+meson8b-dwmac c9410000.ethernet eth0: No Safety Features support found
+meson8b-dwmac c9410000.ethernet eth0: PTP not supported by HW
+IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+IPv6: ADDRCONF(NETDEV_UP): wlx7cdd9079f6a1: link is not ready
+ieee80211 phy0: rt2x00lib_request_firmware: Info - Loading firmware file 'rt2870.bin'
+ieee80211 phy0: rt2x00lib_request_firmware: Info - Firmware detected - version: 0.36
+IPv6: ADDRCONF(NETDEV_UP): wlx7cdd9079f6a1: link is not ready
+IPv6: ADDRCONF(NETDEV_UP): wlx7cdd9079f6a1: link is not ready
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+meson-i2s-dai meson-i2s-dai.3.auto: Unable set to set i2s description
+meson-i2s-dai meson-i2s-dai.3.auto: ASoC: can't set meson-i2s-dai.3.auto hw params: -22
+fuse init (API version 7.27)
+wlx7cdd9079f6a1: authenticate with c8:0e:14:2c:d1:f3
+wlx7cdd9079f6a1: send auth to c8:0e:14:2c:d1:f3 (try 1/3)
+wlx7cdd9079f6a1: authenticated
+wlx7cdd9079f6a1: associate with c8:0e:14:2c:d1:f3 (try 1/3)
+wlx7cdd9079f6a1: RX AssocResp from c8:0e:14:2c:d1:f3 (capab=0x1511 status=0 aid=5)
+wlx7cdd9079f6a1: associated
+wlx7cdd9079f6a1: Limiting TX power to 23 (23 - 0) dBm as advertised by c8:0e:14:2c:d1:f3
+IPv6: ADDRCONF(NETDEV_CHANGE): wlx7cdd9079f6a1: link becomes ready
+wlx7cdd9079f6a1: disconnect from AP c8:0e:14:2c:d1:f3 for new auth to 38:10:d5:f9:d7:3d
+wlx7cdd9079f6a1: authenticate with 38:10:d5:f9:d7:3d
+wlx7cdd9079f6a1: send auth to 38:10:d5:f9:d7:3d (try 1/3)
+wlx7cdd9079f6a1: authenticated
+wlx7cdd9079f6a1: associate with 38:10:d5:f9:d7:3d (try 1/3)
+wlx7cdd9079f6a1: RX ReassocResp from 38:10:d5:f9:d7:3d (capab=0x1511 status=0 aid=4)
+wlx7cdd9079f6a1: associated
+wlx7cdd9079f6a1: Limiting TX power to 23 (23 - 0) dBm as advertised by 38:10:d5:f9:d7:3d
+rc rc0: two consecutive events of type pulse
+usb 1-1.1: new full-speed USB device number 4 using dwc2
+usb 1-1.1: New USB device found, idVendor=24ae, idProduct=1006, bcdDevice= 1.10
+usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.1: Product: Rapoo 2.4G Wireless Touchpad Keyboard
+usb 1-1.1: Manufacturer: RAPOO
+input: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard as /devices/platform/soc/c9100000.usb/usb1/1-1/1-1.1/1-1.1:1.0/0003:24AE:1006.0001/input/input1
+hid-generic 0003:24AE:1006.0001: input: USB HID v1.10 Mouse [RAPOO Rapoo 2.4G Wireless Touchpad Keyboard] on usb-c9100000.usb-1.1/input0
+input: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard System Control as /devices/platform/soc/c9100000.usb/usb1/1-1/1-1.1/1-1.1:1.1/0003:24AE:1006.0002/input/input3
+input: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard Consumer Control as /devices/platform/soc/c9100000.usb/usb1/1-1/1-1.1/1-1.1:1.1/0003:24AE:1006.0002/input/input4
+hid-generic 0003:24AE:1006.0002: input: USB HID v1.10 Device [RAPOO Rapoo 2.4G Wireless Touchpad Keyboard] on usb-c9100000.usb-1.1/input1
+input: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard as /devices/platform/soc/c9100000.usb/usb1/1-1/1-1.1/1-1.1:1.2/0003:24AE:1006.0003/input/input5
+hid-generic 0003:24AE:1006.0003: input: USB HID v1.10 Keyboard [RAPOO Rapoo 2.4G Wireless Touchpad Keyboard] on usb-c9100000.usb-1.1/input2
+alloc_contig_range: [72d00, 734e9) PFNs busy
+alloc_contig_range: [72e00, 735e9) PFNs busy
+alloc_contig_range: [72f00, 736e9) PFNs busy
+alloc_contig_range: [73000, 737e9) PFNs busy
+alloc_contig_range: [73000, 738e9) PFNs busy
+alloc_contig_range: [73000, 739e9) PFNs busy
+alloc_contig_range: [73000, 73ae9) PFNs busy
+alloc_contig_range: [73400, 73be9) PFNs busy
+alloc_contig_range: [73500, 73ce9) PFNs busy
+alloc_contig_range: [73600, 73de9) PFNs busy
+usb 1-1.1: USB disconnect, device number 4
+usb 1-1.1: new full-speed USB device number 5 using dwc2
+usb 1-1.1: New USB device found, idVendor=24ae, idProduct=1006, bcdDevice= 1.10
+usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.1: Product: Rapoo 2.4G Wireless Touchpad Keyboard
+usb 1-1.1: Manufacturer: RAPOO
+input: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard as /devices/platform/soc/c9100000.usb/usb1/1-1/1-1.1/1-1.1:1.0/0003:24AE:1006.0004/input/input6
+hid-generic 0003:24AE:1006.0004: input: USB HID v1.10 Mouse [RAPOO Rapoo 2.4G Wireless Touchpad Keyboard] on usb-c9100000.usb-1.1/input0
+input: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard System Control as /devices/platform/soc/c9100000.usb/usb1/1-1/1-1.1/1-1.1:1.1/0003:24AE:1006.0005/input/input8
+input: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard Consumer Control as /devices/platform/soc/c9100000.usb/usb1/1-1/1-1.1/1-1.1:1.1/0003:24AE:1006.0005/input/input9
+hid-generic 0003:24AE:1006.0005: input: USB HID v1.10 Device [RAPOO Rapoo 2.4G Wireless Touchpad Keyboard] on usb-c9100000.usb-1.1/input1
+input: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard as /devices/platform/soc/c9100000.usb/usb1/1-1/1-1.1/1-1.1:1.2/0003:24AE:1006.0006/input/input10
+hid-generic 0003:24AE:1006.0006: input: USB HID v1.10 Keyboard [RAPOO Rapoo 2.4G Wireless Touchpad Keyboard] on usb-c9100000.usb-1.1/input2
+alloc_contig_range: 13 callbacks suppressed
+alloc_contig_range: [72d00, 734e9) PFNs busy
+alloc_contig_range: [72e00, 735e9) PFNs busy
+alloc_contig_range: [72f00, 736e9) PFNs busy
+alloc_contig_range: [73000, 737e9) PFNs busy
+alloc_contig_range: [73100, 738e9) PFNs busy
+alloc_contig_range: [73200, 739e9) PFNs busy
+alloc_contig_range: [73300, 73ae9) PFNs busy
+alloc_contig_range: [73400, 73be9) PFNs busy
+alloc_contig_range: [73500, 73ce9) PFNs busy
+alloc_contig_range: [73600, 73de9) PFNs busy
+alloc_contig_range: 13 callbacks suppressed
+alloc_contig_range: [72d00, 734e9) PFNs busy
+alloc_contig_range: [72e00, 735e9) PFNs busy
+alloc_contig_range: [72f00, 736e9) PFNs busy
+alloc_contig_range: [73000, 737e9) PFNs busy
+alloc_contig_range: [73100, 738e9) PFNs busy
+alloc_contig_range: [73200, 739e9) PFNs busy
+alloc_contig_range: [73300, 73ae9) PFNs busy
+alloc_contig_range: [73400, 73be9) PFNs busy
+alloc_contig_range: [73500, 73ce9) PFNs busy
+alloc_contig_range: [73600, 73de9) PFNs busy
+alloc_contig_range: 13 callbacks suppressed
+alloc_contig_range: [72d00, 734e9) PFNs busy
+alloc_contig_range: [72e00, 735e9) PFNs busy
+alloc_contig_range: [72f00, 736e9) PFNs busy
+alloc_contig_range: [73000, 737e9) PFNs busy
+alloc_contig_range: [73100, 738e9) PFNs busy
+alloc_contig_range: [73200, 739e9) PFNs busy
+alloc_contig_range: [73300, 73ae9) PFNs busy
+alloc_contig_range: [73400, 73be9) PFNs busy
+alloc_contig_range: [73500, 73ce9) PFNs busy
+alloc_contig_range: [73600, 73de9) PFNs busy
+usb 1-1.1: USB disconnect, device number 5
+usb 1-1.1: new full-speed USB device number 6 using dwc2
+usb 1-1.1: New USB device found, idVendor=24ae, idProduct=1006, bcdDevice= 1.10
+usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.1: Product: Rapoo 2.4G Wireless Touchpad Keyboard
+usb 1-1.1: Manufacturer: RAPOO
+input: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard as /devices/platform/soc/c9100000.usb/usb1/1-1/1-1.1/1-1.1:1.0/0003:24AE:1006.0007/input/input11
+hid-generic 0003:24AE:1006.0007: input: USB HID v1.10 Mouse [RAPOO Rapoo 2.4G Wireless Touchpad Keyboard] on usb-c9100000.usb-1.1/input0
+input: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard System Control as /devices/platform/soc/c9100000.usb/usb1/1-1/1-1.1/1-1.1:1.1/0003:24AE:1006.0008/input/input13
+input: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard Consumer Control as /devices/platform/soc/c9100000.usb/usb1/1-1/1-1.1/1-1.1:1.1/0003:24AE:1006.0008/input/input14
+hid-generic 0003:24AE:1006.0008: input: USB HID v1.10 Device [RAPOO Rapoo 2.4G Wireless Touchpad Keyboard] on usb-c9100000.usb-1.1/input1
+input: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard as /devices/platform/soc/c9100000.usb/usb1/1-1/1-1.1/1-1.1:1.2/0003:24AE:1006.0009/input/input15
+hid-generic 0003:24AE:1006.0009: input: USB HID v1.10 Keyboard [RAPOO Rapoo 2.4G Wireless Touchpad Keyboard] on usb-c9100000.usb-1.1/input2
+alloc_contig_range: 13 callbacks suppressed
+alloc_contig_range: [72d00, 734e9) PFNs busy
+alloc_contig_range: [72e00, 735e9) PFNs busy
+alloc_contig_range: [72f00, 736e9) PFNs busy
+alloc_contig_range: [73000, 737e9) PFNs busy
+alloc_contig_range: [73000, 738e9) PFNs busy
+alloc_contig_range: [73200, 739e9) PFNs busy
+alloc_contig_range: [73300, 73ae9) PFNs busy
+alloc_contig_range: [73400, 73be9) PFNs busy
+alloc_contig_range: [73500, 73ce9) PFNs busy
+alloc_contig_range: [73600, 73de9) PFNs busy

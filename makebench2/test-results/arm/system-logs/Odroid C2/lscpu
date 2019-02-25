@@ -1,0 +1,18 @@
+Architecture:        aarch64
+Byte Order:          Little Endian
+CPU(s):              4
+On-line CPU(s) list: 0-3
+Thread(s) per core:  1
+Core(s) per socket:  4
+Socket(s):           1
+Vendor ID:           ARM
+Model:               4
+Model name:          Cortex-A53
+Stepping:            r0p4
+CPU max MHz:         1536.0000
+CPU min MHz:         100.0000
+BogoMIPS:            48.00
+L1d cache:           unknown size
+L1i cache:           unknown size
+L2 cache:            unknown size
+Flags:               fp asimd evtstrm crc32 cpuid

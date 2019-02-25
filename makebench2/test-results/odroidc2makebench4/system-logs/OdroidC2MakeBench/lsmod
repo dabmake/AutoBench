@@ -1,0 +1,61 @@
+Module                  Size  Used by
+overlay                98304  1
+ccm                    20480  3
+fuse                  102400  3
+lz4hc                  16384  4
+lz4hc_compress         24576  1 lz4hc
+rt2800usb              32768  0
+rt2800lib             110592  1 rt2800usb
+rt2x00usb              24576  1 rt2800usb
+rt2x00lib              53248  3 rt2800usb,rt2x00usb,rt2800lib
+mac80211              466944  3 rt2x00lib,rt2x00usb,rt2800lib
+cfg80211              331776  2 rt2x00lib,mac80211
+crc_ccitt              16384  1 rt2800lib
+rfkill                 28672  4 cfg80211
+spidev                 20480  0
+zram                   24576  5
+snd_soc_meson_aiu_spdif_dma    16384  0
+snd_soc_meson_spdif_dai    16384  0
+snd_soc_meson_i2s_dai    16384  1
+snd_soc_meson_aiu_i2s_dma    16384  1
+snd_soc_simple_card    16384  1
+snd_soc_hdmi_codec     16384  1
+spi_gpio               16384  0
+meson_vdec             53248  0
+snd_soc_simple_card_utils    16384  1 snd_soc_simple_card
+spi_bitbang            16384  1 spi_gpio
+snd_soc_core          155648  7 snd_soc_hdmi_codec,snd_soc_meson_aiu_spdif_dma,snd_soc_meson_spdif_dai,snd_soc_meson_aiu_i2s_dma,snd_soc_simple_card_utils,snd_soc_simple_card,snd_soc_meson_i2s_dai
+videobuf2_dma_contig    20480  1 meson_vdec
+snd_pcm_dmaengine      16384  1 snd_soc_core
+snd_pcm               106496  7 snd_soc_hdmi_codec,snd_soc_meson_aiu_spdif_dma,snd_soc_meson_spdif_dai,snd_soc_meson_aiu_i2s_dma,snd_soc_core,snd_soc_meson_i2s_dai,snd_pcm_dmaengine
+videobuf2_memops       16384  1 videobuf2_dma_contig
+snd_timer              32768  1 snd_pcm
+v4l2_mem2mem           24576  1 meson_vdec
+meson_rng              16384  0
+snd                    73728  6 snd_soc_hdmi_codec,snd_timer,snd_soc_core,snd_pcm
+meson_ir               16384  0
+videobuf2_v4l2         24576  2 meson_vdec,v4l2_mem2mem
+rng_core               16384  1 meson_rng
+soundcore              16384  1 snd
+rc_core                36864  2 meson_ir
+videobuf2_common       40960  3 meson_vdec,videobuf2_v4l2,v4l2_mem2mem
+ao_cec                 16384  0
+videodev              204800  4 meson_vdec,videobuf2_v4l2,videobuf2_common,v4l2_mem2mem
+media                  36864  2 videodev,v4l2_mem2mem
+scpi_hwmon             16384  0
+snd_soc_meson_audio_core    16384  0
+meson_gxbb_wdt         16384  0
+sch_fq_codel           20480  6
+ip_tables              28672  0
+x_tables               36864  1 ip_tables
+dw_hdmi_cec            16384  0
+dw_hdmi_i2s_audio      16384  0
+meson_dw_hdmi          20480  0
+dw_hdmi                36864  2 meson_dw_hdmi,dw_hdmi_i2s_audio
+cec                    49152  3 dw_hdmi_cec,dw_hdmi,ao_cec
+meson_drm              49152  4 meson_dw_hdmi
+drm_kms_helper        172032  5 meson_dw_hdmi,meson_drm,dw_hdmi
+drm                   417792  7 meson_dw_hdmi,meson_drm,drm_kms_helper,dw_hdmi
+meson_canvas           16384  2 meson_drm,meson_vdec
+drm_panel_orientation_quirks    16384  1 drm
+realtek                20480  1
