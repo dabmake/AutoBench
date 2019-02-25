@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.6.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>Heat Sink</Title>
+    <LastModified>2019-02-24 18:51:36</LastModified>
+    <TestClient>Phoronix Test Suite v8.6.1 (Spydeberg)</TestClient>
+    <Description>Rockchip ARMv8 Cortex-A72 testing with a FriendlyElec NanoPC-T4 and llvmpipe 4GB on Ubuntu 18.04 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>Nano PC T4 Heat Sink</Identifier>
+    <Hardware>Processor: Rockchip ARMv8 Cortex-A72 @ 1.42GHz (6 Cores), Motherboard: FriendlyElec NanoPC-T4, Memory: 4096MB, Disk: 16GB 00000, Graphics: llvmpipe 4GB, Monitor: HP 24o</Hardware>
+    <Software>OS: Ubuntu 18.04, Kernel: 4.4.143 (aarch64), Desktop: LXDE 0.9.3, Display Server: X Server 1.19.3, Display Driver: modesetting 1.19.3, OpenGL: 3.3 Mesa 18.2.2 (LLVM 7.0 128 bits), Compiler: GCC 7.3.0 + Clang 6.0.0-1ubuntu2, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>pi</User>
+    <TimeStamp>2019-02-24 13:36:36</TimeStamp>
+    <TestClientVersion>8.6.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-linux-gnu --disable-libquadmath --disable-libquadmath-support --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-fix-cortex-a53-843419 --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-plugin --enable-shared --enable-threads=posix --host=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --target=aarch64-linux-gnu --with-default-libstdcxx-abi=new --with-gcc-major-version-only -v","disk-mount-options":"data=ordered,relatime,rw","cpu-scaling-governor":"cpufreq-dt performance","python":"Python 2.7.15rc1 + Python 3.6.7"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/fio-1.11.5</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>randread libaio 0 1 64k</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 Heat Sink</Identifier>
+        <Value>35.73</Value>
+        <RawString>35.6:36.6:35</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -ll -lnuma -libverbs -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"31.17:30.92:31.02"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 Heat Sink</Identifier>
+        <Value>1563.07</Value>
+        <RawString>1470.1396484375:1901.0068359375:1579.6904296875:1233.392578125:1528.3125:1601.65625:1658.6416015625:1424.6630859375:1709.708984375:2003.6943359375:1465.083984375:1180.90625</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"49.95:45.98:42.03:41.29:40.04:40.47:38.78:39.03:44.12:36.28:37.46:40.27"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 Heat Sink</Identifier>
+        <Value>29.86</Value>
+        <RawString>26.59375:30.1640625:32.7041015625:34.8095703125:27.4599609375:32.90234375:26.837890625:30.1064453125:32.6923828125:29.611328125:24.232421875:30.23046875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"38.64:33.07:32.52:32.09:38.98:36.57:41.40:35.42:35.88:36.57:39.69:36.24"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glmark2-1.1.0</Identifier>
+    <Title>GLmark2</Title>
+    <AppVersion>276</AppVersion>
+    <Arguments>-s 1920x1080</Arguments>
+    <Description>Resolution: 1920 x 1080</Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 Heat Sink</Identifier>
+        <Value>15</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"350.07"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/tinymembench-1.0.2</Identifier>
+    <Title>Tinymembench</Title>
+    <AppVersion>2018-05-28</AppVersion>
+    <Arguments></Arguments>
+    <Description>Standard Memcpy</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 Heat Sink</Identifier>
+        <Value>2758</Value>
+        <RawString>2768.1:2771.3:2735.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"1237.73:1149.69:1228.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/tinymembench-1.0.2</Identifier>
+    <Title>Tinymembench</Title>
+    <AppVersion>2018-05-28</AppVersion>
+    <Arguments></Arguments>
+    <Description>Standard Memset</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 Heat Sink</Identifier>
+        <Value>4860.20</Value>
+        <RawString>4853.8:4861.9:4864.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"1237.73:1149.69:1228.28"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/numpy-1.0.5</Identifier>
+    <Title>Numpy Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description></Description>
+    <Scale>Nanoseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 Heat Sink</Identifier>
+        <Value>21374829</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"9651.96"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/x264-2.5.0</Identifier>
+    <Title>x264</Title>
+    <AppVersion>2018-09-25</AppVersion>
+    <Arguments></Arguments>
+    <Description>H.264 Video Encoding</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 Heat Sink</Identifier>
+        <Value>5.85</Value>
+        <RawString>5.86:5.94:5.76</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-ldl -lavformat -lavcodec -lavutil -lswscale -lm -lpthread"},"test-run-times":"102.97:101.27:104.52"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-7zip-1.7.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>16.02</AppVersion>
+    <Arguments></Arguments>
+    <Description>Compress Speed Test</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 Heat Sink</Identifier>
+        <Value>3814</Value>
+        <RawString>3865:3929:3664:3797</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"},"test-run-times":"82.59:81.62:84.23:83.68"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/c-ray-1.2.0</Identifier>
+    <Title>C-Ray</Title>
+    <AppVersion>1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time - 4K, 16 Rays Per Pixel</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 Heat Sink</Identifier>
+        <Value>761.58</Value>
+        <RawString>765.357:757.734:761.648</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"},"test-run-times":"766.87:759.34:763.39"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/opencv-bench-1.0.0</Identifier>
+    <Title>OpenCV Benchmark</Title>
+    <AppVersion>3.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description></Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 Heat Sink</Identifier>
+        <Value>374.20</Value>
+        <RawString>373.15225195885:380.11026716232:369.33993387222</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-std=c++11 -rdynamic"},"test-run-times":"373.15:380.11:369.34"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/openssl-1.11.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion>1.1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>RSA 4096-bit Performance</Description>
+    <Scale>Signs Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 Heat Sink</Identifier>
+        <Value>133</Value>
+        <RawString>132.9:133:133.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -O3 -lssl -lcrypto -ldl"},"test-run-times":"20.33:20.21:20.19"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

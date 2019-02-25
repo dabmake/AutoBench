@@ -1,0 +1,1 @@
+earlycon=uart8250,mmio32,0xff1a0000 swiotlb=1 console=ttyFIQ0 rw root=PARTUUID=614e0000-0000 rootfstype=ext4 rootwait root=/dev/mmcblk0p1 rw rootfstype=ext4 storagemedia=sd uboot_logo=0x02000000@0xf5c00000 loader.timestamp=2018-08-01_14:55:50 SecureBootCheckOk=0
