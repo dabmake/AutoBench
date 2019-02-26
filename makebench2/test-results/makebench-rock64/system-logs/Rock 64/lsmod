@@ -1,0 +1,14 @@
+Module                  Size  Used by
+rt2800usb              28672  0
+rt2800lib              81920  1 rt2800usb
+rt2x00usb              20480  1 rt2800usb
+rt2x00lib              49152  3 rt2x00usb,rt2800lib,rt2800usb
+overlay                45056  2
+af_packet              40960  8
+zram                   32768  5
+lz4_compress           16384  1 zram
+gpio_ir_recv           16384  0
+rk_vcodec              65536  0
+ip_tables              24576  0
+x_tables               28672  1 ip_tables
+autofs4                40960  2

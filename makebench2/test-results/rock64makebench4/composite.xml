@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.6.0m2-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>rock64MakeBench4</Title>
+    <LastModified>2019-01-25 11:35:32</LastModified>
+    <TestClient>Phoronix Test Suite v8.6.0m2 (Spydeberg)</TestClient>
+    <Description>Rockchip ARMv8 Cortex-A53 testing with a Pine64 Rock64 and llvmpipe 4GB on Ubuntu 18.04 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>rock64MakeBench4</Identifier>
+    <Hardware>Processor: Rockchip ARMv8 Cortex-A53 @ 1.39GHz (4 Cores), Motherboard: Pine64 Rock64, Memory: 4096MB, Disk: 32GB SL32G, Graphics: llvmpipe 4GB, Monitor: PHL 243V5</Hardware>
+    <Software>OS: Ubuntu 18.04, Kernel: 4.4.167-rockchip64 (aarch64), Desktop: Xfce 4.12, Display Server: X Server 1.19.6, Display Driver: modesetting 1.19.6, OpenGL: 3.3 Mesa 18.0.5 (LLVM 6.0 128 bits), Compiler: GCC 7.3.0, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>dab</User>
+    <TimeStamp>2019-01-25 07:21:23</TimeStamp>
+    <TestClientVersion>8.6.0m2</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-linux-gnu --disable-libquadmath --disable-libquadmath-support --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-fix-cortex-a53-843419 --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-plugin --enable-shared --enable-threads=posix --host=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --target=aarch64-linux-gnu --with-default-libstdcxx-abi=new --with-gcc-major-version-only -v","disk-mount-options":"commit=600,errors=remount-ro,noatime,nodiratime,rw","cpu-scaling-governor":"cpufreq-dt ondemand","python":"Python 2.7.15rc1 + Python 3.6.7"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/dbench-1.0.0</Identifier>
+    <Title>Dbench</Title>
+    <AppVersion>4.0</AppVersion>
+    <Arguments>1</Arguments>
+    <Description>Client Count: 1</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rock64MakeBench4</Identifier>
+        <Value>46.34</Value>
+        <RawString>46.3768:46.2875:46.349</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lpopt -O2"},"test-run-times":"721.72:720.72:720.26"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rock64MakeBench4</Identifier>
+        <Value>1685</Value>
+        <RawString>1690.34375:1684.3828125:1679.150390625</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"73.54:73.89:72.83"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rock64MakeBench4</Identifier>
+        <Value>14.56</Value>
+        <RawString>14.734375:14.84375:13.7421875:14.77734375:14.6796875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"72.86:72.30:74.99:71.95:72.38"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/tinymembench-1.0.2</Identifier>
+    <Title>Tinymembench</Title>
+    <AppVersion>2018-05-28</AppVersion>
+    <Arguments></Arguments>
+    <Description>Standard Memcpy</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rock64MakeBench4</Identifier>
+        <Value>1219</Value>
+        <RawString>1219.6:1218.8:1217.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"487.58:458.28:594.62"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/tinymembench-1.0.2</Identifier>
+    <Title>Tinymembench</Title>
+    <AppVersion>2018-05-28</AppVersion>
+    <Arguments></Arguments>
+    <Description>Standard Memset</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rock64MakeBench4</Identifier>
+        <Value>4433</Value>
+        <RawString>4355.2:4472.1:4473.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"487.58:458.28:594.62"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/cachebench-1.1.2</Identifier>
+    <Title>CacheBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>-b</Arguments>
+    <Description>Test: Read / Modify / Write</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rock64MakeBench4</Identifier>
+        <Value>2435</Value>
+        <RawString>2444.1088890476:2445.765518381:2415.2448970952</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lrt"},"test-run-times":"125.15:125.13:125.14"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/x264-2.5.0</Identifier>
+    <Title>x264</Title>
+    <AppVersion>2018-09-25</AppVersion>
+    <Arguments></Arguments>
+    <Description>H.264 Video Encoding</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rock64MakeBench4</Identifier>
+        <Value>2.29</Value>
+        <RawString>2.16:2.26:2.34:2.34:2.34</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-ldl -lavformat -lavcodec -lavutil -lswscale -lm -lpthread"},"test-run-times":"278.79:266.05:256.58:256.20:256.79"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/c-ray-1.2.0</Identifier>
+    <Title>C-Ray</Title>
+    <AppVersion>1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time - 4K, 16 Rays Per Pixel</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rock64MakeBench4</Identifier>
+        <Value>1839.54</Value>
+        <RawString>1880.665:1822.564:1815.376</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"},"test-run-times":"1882.42:1824.36:1817.90"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/encode-mp3-1.7.2</Identifier>
+    <Title>LAME MP3 Encoding</Title>
+    <AppVersion>3.100</AppVersion>
+    <Arguments></Arguments>
+    <Description>WAV To MP3</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rock64MakeBench4</Identifier>
+        <Value>322.26</Value>
+        <RawString>333.40391802788:316.77836298943:316.59352588654</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm"},"test-run-times":"333.40:316.78:316.59"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/opencv-bench-1.0.0</Identifier>
+    <Title>OpenCV Benchmark</Title>
+    <AppVersion>3.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description></Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rock64MakeBench4</Identifier>
+        <Value>521</Value>
+        <RawString>523.29897284508:522.71480488777:517.80160522461</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-std=c++11 -rdynamic"},"test-run-times":"523.30:522.71:517.80"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/openssl-1.11.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion>1.1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>RSA 4096-bit Performance</Description>
+    <Scale>Signs Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rock64MakeBench4</Identifier>
+        <Value>69.73</Value>
+        <RawString>69.7:69.7:69.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -O3 -lssl -lcrypto -ldl"},"test-run-times":"20.37:20.14:20.14"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pybench-1.1.2</Identifier>
+    <Title>PyBench</Title>
+    <AppVersion>2018-02-16</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total For Average Test Times</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>rock64MakeBench4</Identifier>
+        <Value>14514</Value>
+        <RawString>14603:14523:14415</RawString>
+        <JSON>{"test-run-times":"330.46:330.17:327.07"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

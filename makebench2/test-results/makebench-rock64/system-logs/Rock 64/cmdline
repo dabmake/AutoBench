@@ -1,0 +1,1 @@
+earlycon=uart8250,mmio32,0xff130000 swiotlb=1 kpti=0 root=UUID=05bb48fc-319f-4613-ac26-5191fc4e8331 rootwait rootfstype=ext4 console=ttyS2,1500000 console=tty1 panic=10 consoleblank=0 loglevel=1 ubootpart=4c022dc5-01 usb-storage.quirks=0x2537:0x1066:u,0x2537:0x1068:u   cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory swapaccount=1

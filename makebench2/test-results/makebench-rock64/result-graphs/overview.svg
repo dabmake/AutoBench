@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--Phoronix Test Suite v8.6.0m2 [ http://www.phoronix-test-suite.com/ ]-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" font-family="sans-serif, droid-sans, helvetica, verdana, tahoma" viewbox="0 0 1078 281" width="1078" height="281" preserveAspectRatio="xMinYMin meet">
+  <rect x="0" y="0" width="1078" height="281" fill="#FEFEFE" stroke="#757575" stroke-width="2"/>
+  <rect x="1" y="1" width="1077" height="280" fill="#FEFEFE" stroke="#757575" stroke-width="1"/>
+  <path d="m74 22v9m-5-16v16m-5-28v28m-23-2h12.5c2.485281 0 4.5-2.014719 4.5-4.5s-2.014719-4.5-4.5-4.5h-8c-2.485281 0-4.5-2.014719-4.5-4.5s2.014719-4.5 4.5-4.5h12.5m-21 5h-11m11 13h-2c-4.970563 0-9-4.029437-9-9v-20m-24 40v-20c0-4.970563 4.0294373-9 9-9 4.970563 0 9 4.029437 9 9s-4.029437 9-9 9h-9" stroke="#000000" stroke-width="4" fill="none" transform="translate(438,28)"/>
+  <line x1="956" y1="145" x2="1017" y2="145" stroke="#BABABA" stroke-width="240" stroke-dasharray="61,61"/>
+  <rect x="1017" y="25" width="61" height="240" fill="#949494"/>
+  <line x1="509" y1="73" x2="509" y2="265" stroke="#949494" stroke-width="1017" stroke-dasharray="16,16"/>
+  <line x1="956" y1="145" x2="1078" y2="145" stroke="#757575" stroke-width="240" stroke-dasharray="1,60"/>
+  <rect x="1" y="1" width="1076" height="25" fill="#231f20"/>
+  <text x="5" y="19" font-size="17" fill="#FEFEFE" text-anchor="start">makebench-rock64</text>
+  <line x1="1" y1="25" x2="1077" y2="25" stroke="#757575" stroke-width="1"/>
+  <g font-size="10" font-weight="bold" fill="#065695" text-anchor="end">
+    <a xlink:href="https://openbenchmarking.org/test/pts/fio-1.11.5" xlink:show="new">
+      <text x="954" y="85">fio: Type: Random Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory</text>
+    </a>
+    <a xlink:href="https://openbenchmarking.org/test/pts/iozone-1.9.5" xlink:show="new">
+      <text x="954" y="101">iozone: Record Size: 64Kb - File Size: 512MB - Disk Test: Read Performance</text>
+    </a>
+    <a xlink:href="https://openbenchmarking.org/test/pts/iozone-1.9.5" xlink:show="new">
+      <text x="954" y="117">iozone: Record Size: 64Kb - File Size: 512MB - Disk Test: Write Performance</text>
+    </a>
+    <a xlink:href="https://openbenchmarking.org/test/pts/glmark2-1.1.0" xlink:show="new">
+      <text x="954" y="133">glmark2: Resolution: 1920 x 1080</text>
+    </a>
+    <a xlink:href="https://openbenchmarking.org/test/pts/tinymembench-1.0.2" xlink:show="new">
+      <text x="954" y="149">tinymembench: Standard Memcpy</text>
+    </a>
+    <a xlink:href="https://openbenchmarking.org/test/pts/tinymembench-1.0.2" xlink:show="new">
+      <text x="954" y="165">tinymembench: Standard Memset</text>
+    </a>
+    <a xlink:href="https://openbenchmarking.org/test/pts/numpy-1.0.5" xlink:show="new">
+      <text x="954" y="181">numpy: </text>
+    </a>
+    <a xlink:href="https://openbenchmarking.org/test/pts/x264-2.5.0" xlink:show="new">
+      <text x="954" y="197">x264: H.264 Video Encoding</text>
+    </a>
+    <a xlink:href="https://openbenchmarking.org/test/pts/compress-7zip-1.7.0" xlink:show="new">
+      <text x="954" y="213">compress-7zip: Compress Speed Test</text>
+    </a>
+    <a xlink:href="https://openbenchmarking.org/test/pts/c-ray-1.2.0" xlink:show="new">
+      <text x="954" y="229">c-ray: Total Time - 4K, 16 Rays Per Pixel</text>
+    </a>
+    <a xlink:href="https://openbenchmarking.org/test/pts/opencv-bench-1.0.0" xlink:show="new">
+      <text x="954" y="245">opencv-bench: </text>
+    </a>
+    <a xlink:href="https://openbenchmarking.org/test/pts/openssl-1.11.0" xlink:show="new">
+      <text x="954" y="261">openssl: RSA 4096-bit Performance</text>
+    </a>
+  </g>
+  <g font-size="10" fill="#065695" font-weight="bold" text-anchor="middle" dominant-baseline="text-before-edge">
+    <text x="987" y="49">Rock 64</text>
+  </g>
+  <g fill="#BABABA"/>
+  <g text-anchor="middle" font-size="10" fill="#065695">
+    <text x="987" y="86" xlink:title="STD Dev: 2.40%;  STD Error: 0.27">19.27</text>
+    <text x="987" y="102" xlink:title="STD Dev: 1.47%;  STD Error: 14.65">1725.92</text>
+    <text x="987" y="118" xlink:title="STD Dev: 3.49%;  STD Error: 0.28">14.10</text>
+    <text x="987" y="134">3</text>
+    <text x="987" y="150" xlink:title="STD Dev: 0.23%;  STD Error: 1.62">1241</text>
+    <text x="987" y="166" xlink:title="STD Dev: 0.23%;  STD Error: 6.44">4883.70</text>
+    <text x="987" y="182">56152387</text>
+    <text x="987" y="198" xlink:title="STD Dev: 3.31%;  STD Error: 0.04">2.37</text>
+    <text x="987" y="214" xlink:title="STD Dev: 0.39%;  STD Error: 4.10">1832</text>
+    <text x="987" y="230" xlink:title="STD Dev: 0.19%;  STD Error: 1.97">1815.71</text>
+    <text x="987" y="246" xlink:title="STD Dev: 0.19%;  STD Error: 0.57">523.09</text>
+    <text x="987" y="262" xlink:title="STD Dev: 0.08%;  STD Error: 0.03">69.87</text>
+  </g>
+  <line x1="509" y1="73" x2="509" y2="265" stroke="#949494" stroke-width="1017" stroke-dasharray="1,15"/>
+  <rect x="0" y="265" width="1078" height="16" fill="#231f20"/>
+  <a xlink:href="https://www.phoronix-test-suite.com/" xlink:show="new">
+    <text x="1076" y="278" font-size="10" fill="#FFFFFF" text-anchor="end" xlink:show="new">PHORONIX-TEST-SUITE.COM</text>
+  </a>
+</svg>
