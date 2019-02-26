@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.6.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>makebench-dab</Title>
+    <LastModified>2019-02-26 13:07:55</LastModified>
+    <TestClient>Phoronix Test Suite v8.6.1 (Spydeberg)</TestClient>
+    <Description>Rockchip ARMv8 Cortex-A72 testing with a FriendlyElec NanoPC-T4 and llvmpipe 4GB on Ubuntu 18.04 via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>Nano PC T4 A1 Card</Identifier>
+    <Hardware>Processor: Rockchip ARMv8 Cortex-A72 @ 1.42GHz (6 Cores), Motherboard: FriendlyElec NanoPC-T4, Memory: 4096MB, Disk: 16GB SC16G, Monitor: HP 24o</Hardware>
+    <Software>OS: Ubuntu 18.04, Kernel: 4.4.143 (aarch64), Desktop: LXDE 0.9.3, Display Server: X Server 1.19.3, Compiler: GCC 7.3.0 + Clang 6.0.0-1ubuntu2, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>pi</User>
+    <TimeStamp>2019-02-25 18:30:08</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-linux-gnu --disable-libquadmath --disable-libquadmath-support --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-fix-cortex-a53-843419 --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-plugin --enable-shared --enable-threads=posix --host=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --target=aarch64-linux-gnu --with-default-libstdcxx-abi=new --with-gcc-major-version-only -v","disk-mount-options":"data=ordered,relatime,rw","cpu-scaling-governor":"cpufreq-dt performance","python":"Python 2.7.15rc1 + Python 3.6.7"}</JSON>
+  </System>
+  <System>
+    <Identifier>Nanp PC T4 A1</Identifier>
+    <Hardware>Processor: Rockchip ARMv8 Cortex-A72 @ 1.42GHz (6 Cores), Motherboard: FriendlyElec NanoPC-T4, Memory: 4096MB, Disk: 16GB SC16G, Graphics: llvmpipe 4GB, Monitor: HP 24o</Hardware>
+    <Software>OS: Ubuntu 18.04, Kernel: 4.4.143 (aarch64), Desktop: LXDE 0.9.3, Display Server: X Server 1.19.3, Display Driver: modesetting 1.19.3, OpenGL: 3.3 Mesa 18.2.2 (LLVM 7.0 128 bits), Compiler: GCC 7.3.0 + Clang 6.0.0-1ubuntu2, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>pi</User>
+    <TimeStamp>2019-02-26 07:45:14</TimeStamp>
+    <TestClientVersion>8.6.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-linux-gnu --disable-libquadmath --disable-libquadmath-support --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-fix-cortex-a53-843419 --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-plugin --enable-shared --enable-threads=posix --host=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --target=aarch64-linux-gnu --with-default-libstdcxx-abi=new --with-gcc-major-version-only -v","disk-mount-options":"data=ordered,relatime,rw","cpu-scaling-governor":"cpufreq-dt performance","python":"Python 2.7.15rc1 + Python 3.6.7"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/fio-1.11.5</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>randread libaio 0 1 64k</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 A1 Card</Identifier>
+        <Value>45.77</Value>
+        <RawString>45.4:46.3:45.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -ll -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"107.99:31.01:30.89"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Nanp PC T4 A1</Identifier>
+        <Value>46.60</Value>
+        <RawString>46:46.7:47.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -ll -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"30.84:30.78:30.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 A1 Card</Identifier>
+        <Value>1428</Value>
+        <RawString>1009.2158203125:1436.337890625:1646.720703125:1169.669921875:1843.09765625:1457.302734375:1449.8037109375:1281.8837890625:1346.94921875:1523.77734375:1460.1240234375:1516.798828125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"80.75:79.91:78.84:77.48:77.73:78.71:79.24:80.79:78.65:78.40:78.18:79.03"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Nanp PC T4 A1</Identifier>
+        <Value>1510</Value>
+        <RawString>1492.01171875:1522.373046875:1516.1474609375</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"83.13:86.39:82.65"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 A1 Card</Identifier>
+        <Value>13.47</Value>
+        <RawString>13.7255859375:13.36328125:13.3095703125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"78.04:76.07:78.90"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Nanp PC T4 A1</Identifier>
+        <Value>12.22</Value>
+        <RawString>12.88671875:11.10546875:12.443359375:12.1142578125:12.3271484375:11.5234375:12.6767578125:12.373046875:12.107421875:12.5693359375:11.9287109375:12.6328125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"83.11:88.14:83.14:85.14:88.39:83.64:81.08:82.23:86.53:82.10:89.67:79.93"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glmark2-1.1.0</Identifier>
+    <Title>GLmark2</Title>
+    <AppVersion>276</AppVersion>
+    <Arguments>-s 1920x1080</Arguments>
+    <Description>Resolution: 1920 x 1080</Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 A1 Card</Identifier>
+        <Value>15</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"350.88"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Nanp PC T4 A1</Identifier>
+        <Value>16</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"350.60"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/tinymembench-1.0.2</Identifier>
+    <Title>Tinymembench</Title>
+    <AppVersion>2018-05-28</AppVersion>
+    <Arguments></Arguments>
+    <Description>Standard Memcpy</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 A1 Card</Identifier>
+        <Value>2733</Value>
+        <RawString>2732.8:2734.7:2731.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"852.01:1100.86:1167.16"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Nanp PC T4 A1</Identifier>
+        <Value>2746</Value>
+        <RawString>2701.1:2762.2:2774.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"1396.56:1115.31:1330.74"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/tinymembench-1.0.2</Identifier>
+    <Title>Tinymembench</Title>
+    <AppVersion>2018-05-28</AppVersion>
+    <Arguments></Arguments>
+    <Description>Standard Memset</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 A1 Card</Identifier>
+        <Value>4866</Value>
+        <RawString>4859.1:4871:4867.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"852.01:1100.86:1167.16"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Nanp PC T4 A1</Identifier>
+        <Value>4841</Value>
+        <RawString>4808.7:4857.8:4856.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"1396.56:1115.31:1330.74"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/x264-2.5.0</Identifier>
+    <Title>x264</Title>
+    <AppVersion>2018-09-25</AppVersion>
+    <Arguments></Arguments>
+    <Description>H.264 Video Encoding</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 A1 Card</Identifier>
+        <Value>5.97</Value>
+        <RawString>5.91:5.85:6.15</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-ldl -lavformat -lavcodec -lavutil -lswscale -lm -lpthread"},"test-run-times":"102.16:102.98:97.81"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Nanp PC T4 A1</Identifier>
+        <Value>5.77</Value>
+        <RawString>5.75:5.69:5.87</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-ldl -lavformat -lavcodec -lavutil -lswscale -lm -lpthread"},"test-run-times":"104.89:105.82:102.58"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-7zip-1.7.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>16.02</AppVersion>
+    <Arguments></Arguments>
+    <Description>Compress Speed Test</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 A1 Card</Identifier>
+        <Value>3982</Value>
+        <RawString>4090:3786:4012:4041</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"},"test-run-times":"79.21:82.79:80.66:79.50"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Nanp PC T4 A1</Identifier>
+        <Value>3900</Value>
+        <RawString>3944:3818:3939</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"},"test-run-times":"81.96:83.95:82.77"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/c-ray-1.2.0</Identifier>
+    <Title>C-Ray</Title>
+    <AppVersion>1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time - 4K, 16 Rays Per Pixel</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 A1 Card</Identifier>
+        <Value>762</Value>
+        <RawString>749.029:773.735:762.738</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"},"test-run-times":"750.49:775.23:764.24"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Nanp PC T4 A1</Identifier>
+        <Value>755</Value>
+        <RawString>738.941:762.694:763.109</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"},"test-run-times":"740.46:764.37:764.58"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/opencv-bench-1.0.0</Identifier>
+    <Title>OpenCV Benchmark</Title>
+    <AppVersion>3.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description></Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 A1 Card</Identifier>
+        <Value>375</Value>
+        <RawString>378.4643099308:371.80240893364:374.47720813751</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-std=c++11 -rdynamic"},"test-run-times":"378.46:371.80:374.48"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Nanp PC T4 A1</Identifier>
+        <Value>394</Value>
+        <RawString>399.44914007187:393.00787687302:388.40025806427</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-std=c++11 -rdynamic"},"test-run-times":"399.45:393.01:388.40"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/openssl-1.11.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion>1.1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>RSA 4096-bit Performance</Description>
+    <Scale>Signs Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 A1 Card</Identifier>
+        <Value>133</Value>
+        <RawString>132.9:132.9:133.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -O3 -lssl -lcrypto -ldl"},"test-run-times":"20.32:20.22:20.19"}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Nanp PC T4 A1</Identifier>
+        <Value>133</Value>
+        <RawString>132.7:132.6:132.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -O3 -lssl -lcrypto -ldl"},"test-run-times":"20.30:20.21:20.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/numpy-1.0.5</Identifier>
+    <Title>Numpy Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description></Description>
+    <Scale>Nanoseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nanp PC T4 A1</Identifier>
+        <Value>21197763</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"9596.11"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
