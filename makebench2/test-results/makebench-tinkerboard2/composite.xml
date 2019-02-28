@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.6.0m2-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>makebench-tinkerboard2</Title>
+    <LastModified>2019-02-27 14:20:08</LastModified>
+    <TestClient>Phoronix Test Suite v8.6.0m2 (Spydeberg)</TestClient>
+    <Description>ARMv7 rev 1 testing with a Rockchip (Device Tree) RK3288 Tinker Board and llvmpipe 2GB on Ubuntu 18.04 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>Tinker Board</Identifier>
+    <Hardware>Processor: ARMv7 rev 1 @ 1.80GHz (4 Cores), Motherboard: Rockchip (Device Tree) RK3288 Tinker Board, Memory: 2048MB, Disk: 31GB SD32G, Graphics: llvmpipe 2GB</Hardware>
+    <Software>OS: Ubuntu 18.04, Kernel: 4.19.16-rockchip (armv7l), Desktop: Xfce 4.12, Display Server: X Server 1.19.6, Display Driver: modesetting 1.19.6, OpenGL: 3.3 Mesa 18.0.5 (LLVM 6.0 128 bits), Compiler: GCC 7.3.0, File-System: ext4, Screen Resolution: 1024x768</Software>
+    <User>dab</User>
+    <TimeStamp>2019-02-27 07:15:18</TimeStamp>
+    <TestClientVersion>8.6.0m2</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=arm-linux-gnueabihf --disable-libitm --disable-libquadmath --disable-libquadmath-support --disable-sjlj-exceptions --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-multilib --enable-nls --enable-objc-gc=auto --enable-plugin --enable-shared --enable-threads=posix --host=arm-linux-gnueabihf --program-prefix=arm-linux-gnueabihf- --target=arm-linux-gnueabihf --with-arch=armv7-a --with-default-libstdcxx-abi=new --with-float=hard --with-fpu=vfpv3-d16 --with-gcc-major-version-only --with-mode=thumb --with-target-system-zlib -v","disk-mount-options":"commit=600,errors=remount-ro,noatime,nodiratime,rw","cpu-scaling-governor":"cpufreq-dt ondemand","python":"Python 2.7.15rc1 + Python 3.6.7"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/fio-1.11.5</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>randread libaio 0 1 64k</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Tinker Board</Identifier>
+        <Value>28.37</Value>
+        <RawString>28.3:28.4:28.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -libverbs -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"31.03:30.92:30.92"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Tinker Board</Identifier>
+        <Value>1083.50</Value>
+        <RawString>1046.779296875:1123.408203125:1117.8662109375:1064.091796875:1065.3388671875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"94.61:76.68:77.07:75.39:82.78"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Tinker Board</Identifier>
+        <Value>13.20</Value>
+        <RawString>13.3369140625:12.7431640625:13.853515625:12.5537109375:12.9814453125:13.18359375:13.685546875:13.2353515625</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"82.96:81.68:76.16:87.36:81.32:80.01:77.78:80.45"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glmark2-1.1.0</Identifier>
+    <Title>GLmark2</Title>
+    <AppVersion>276</AppVersion>
+    <Arguments>-s 1920x1080</Arguments>
+    <Description>Resolution: 1920 x 1080</Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Tinker Board</Identifier>
+        <Value>1</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"433.35"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/tinymembench-1.0.2</Identifier>
+    <Title>Tinymembench</Title>
+    <AppVersion>2018-05-28</AppVersion>
+    <Arguments></Arguments>
+    <Description>Standard Memcpy</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Tinker Board</Identifier>
+        <Value>1415</Value>
+        <RawString>1416.3:1414:1414.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"348.22:312.45:382.55"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/tinymembench-1.0.2</Identifier>
+    <Title>Tinymembench</Title>
+    <AppVersion>2018-05-28</AppVersion>
+    <Arguments></Arguments>
+    <Description>Standard Memset</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Tinker Board</Identifier>
+        <Value>3767.50</Value>
+        <RawString>3754.3:3785.5:3762.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"348.22:312.45:382.55"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/numpy-1.0.5</Identifier>
+    <Title>Numpy Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description></Description>
+    <Scale>Nanoseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Tinker Board</Identifier>
+        <Value>33654395</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"15186.25"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/x264-2.5.0</Identifier>
+    <Title>x264</Title>
+    <AppVersion>2018-09-25</AppVersion>
+    <Arguments></Arguments>
+    <Description>H.264 Video Encoding</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Tinker Board</Identifier>
+        <Value>3.25</Value>
+        <RawString>3.28:3.21:3.26</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-ldl -lavformat -lavcodec -lavutil -lswscale -lm -lpthread"},"test-run-times":"183.34:187.67:184.62"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-7zip-1.7.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>16.02</AppVersion>
+    <Arguments></Arguments>
+    <Description>Compress Speed Test</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Tinker Board</Identifier>
+        <Value>2966</Value>
+        <RawString>3039:2899:2959</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"},"test-run-times":"68.96:72.03:71.25"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/c-ray-1.2.0</Identifier>
+    <Title>C-Ray</Title>
+    <AppVersion>1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time - 4K, 16 Rays Per Pixel</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Tinker Board</Identifier>
+        <Value>1673.07</Value>
+        <RawString>1676.154:1673.842:1669.211</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"},"test-run-times":"1677.47:1676.60:1673.41"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/opencv-bench-1.0.0</Identifier>
+    <Title>OpenCV Benchmark</Title>
+    <AppVersion>3.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description></Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Tinker Board</Identifier>
+        <Value>531.41</Value>
+        <RawString>528.34206700325:533.95473504066:531.94679498672</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-std=c++11 -rdynamic"},"test-run-times":"528.34:533.95:531.95"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/openssl-1.11.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion>1.1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>RSA 4096-bit Performance</Description>
+    <Scale>Signs Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Tinker Board</Identifier>
+        <Value>61.76</Value>
+        <RawString>66.7:62.6:60.6:61.3:61.4:60.7:60.3:60.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -march=armv7-a -O3 -lssl -lcrypto -ldl"},"test-run-times":"20.28:20.17:20.12:20.18:20.15:20.20:20.22:20.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

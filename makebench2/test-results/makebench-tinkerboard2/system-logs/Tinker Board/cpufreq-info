@@ -1,0 +1,54 @@
+cpufrequtils 008: cpufreq-info (C) Dominik Brodowski 2004-2009
+Report errors and bugs to cpufreq@vger.kernel.org, please.
+analyzing CPU 0:
+  driver: cpufreq-dt
+  CPUs which run at the same hardware frequency: 0 1 2 3
+  CPUs which need to have their frequency coordinated by software: 0 1 2 3
+  maximum transition latency: 124 us.
+  hardware limits: 126 MHz - 1.80 GHz
+  available frequency steps: 126 MHz, 216 MHz, 312 MHz, 408 MHz, 600 MHz, 696 MHz, 816 MHz, 1.01 GHz, 1.20 GHz, 1.42 GHz, 1.51 GHz, 1.61 GHz, 1.70 GHz, 1.80 GHz
+  available cpufreq governors: conservative, userspace, powersave, ondemand, performance, schedutil
+  current policy: frequency should be within 600 MHz and 1.80 GHz.
+                  The governor "ondemand" may decide which speed to use
+                  within this range.
+  current CPU frequency is 1.80 GHz (asserted by call to hardware).
+  cpufreq stats: 126 MHz:0.00%, 216 MHz:0.00%, 312 MHz:0.03%, 408 MHz:0.00%, 600 MHz:1.31%, 696 MHz:0.00%, 816 MHz:0.01%, 1.01 GHz:13.07%, 1.20 GHz:9.27%, 1.42 GHz:1.64%, 1.51 GHz:2.16%, 1.61 GHz:7.23%, 1.70 GHz:24.02%, 1.80 GHz:41.26%  (115768)
+analyzing CPU 1:
+  driver: cpufreq-dt
+  CPUs which run at the same hardware frequency: 0 1 2 3
+  CPUs which need to have their frequency coordinated by software: 0 1 2 3
+  maximum transition latency: 124 us.
+  hardware limits: 126 MHz - 1.80 GHz
+  available frequency steps: 126 MHz, 216 MHz, 312 MHz, 408 MHz, 600 MHz, 696 MHz, 816 MHz, 1.01 GHz, 1.20 GHz, 1.42 GHz, 1.51 GHz, 1.61 GHz, 1.70 GHz, 1.80 GHz
+  available cpufreq governors: conservative, userspace, powersave, ondemand, performance, schedutil
+  current policy: frequency should be within 600 MHz and 1.80 GHz.
+                  The governor "ondemand" may decide which speed to use
+                  within this range.
+  current CPU frequency is 1.80 GHz (asserted by call to hardware).
+  cpufreq stats: 126 MHz:0.00%, 216 MHz:0.00%, 312 MHz:0.03%, 408 MHz:0.00%, 600 MHz:1.31%, 696 MHz:0.00%, 816 MHz:0.01%, 1.01 GHz:13.07%, 1.20 GHz:9.27%, 1.42 GHz:1.64%, 1.51 GHz:2.16%, 1.61 GHz:7.23%, 1.70 GHz:24.02%, 1.80 GHz:41.26%  (115768)
+analyzing CPU 2:
+  driver: cpufreq-dt
+  CPUs which run at the same hardware frequency: 0 1 2 3
+  CPUs which need to have their frequency coordinated by software: 0 1 2 3
+  maximum transition latency: 124 us.
+  hardware limits: 126 MHz - 1.80 GHz
+  available frequency steps: 126 MHz, 216 MHz, 312 MHz, 408 MHz, 600 MHz, 696 MHz, 816 MHz, 1.01 GHz, 1.20 GHz, 1.42 GHz, 1.51 GHz, 1.61 GHz, 1.70 GHz, 1.80 GHz
+  available cpufreq governors: conservative, userspace, powersave, ondemand, performance, schedutil
+  current policy: frequency should be within 600 MHz and 1.80 GHz.
+                  The governor "ondemand" may decide which speed to use
+                  within this range.
+  current CPU frequency is 1.80 GHz (asserted by call to hardware).
+  cpufreq stats: 126 MHz:0.00%, 216 MHz:0.00%, 312 MHz:0.03%, 408 MHz:0.00%, 600 MHz:1.31%, 696 MHz:0.00%, 816 MHz:0.01%, 1.01 GHz:13.07%, 1.20 GHz:9.27%, 1.42 GHz:1.64%, 1.51 GHz:2.16%, 1.61 GHz:7.23%, 1.70 GHz:24.02%, 1.80 GHz:41.26%  (115768)
+analyzing CPU 3:
+  driver: cpufreq-dt
+  CPUs which run at the same hardware frequency: 0 1 2 3
+  CPUs which need to have their frequency coordinated by software: 0 1 2 3
+  maximum transition latency: 124 us.
+  hardware limits: 126 MHz - 1.80 GHz
+  available frequency steps: 126 MHz, 216 MHz, 312 MHz, 408 MHz, 600 MHz, 696 MHz, 816 MHz, 1.01 GHz, 1.20 GHz, 1.42 GHz, 1.51 GHz, 1.61 GHz, 1.70 GHz, 1.80 GHz
+  available cpufreq governors: conservative, userspace, powersave, ondemand, performance, schedutil
+  current policy: frequency should be within 600 MHz and 1.80 GHz.
+                  The governor "ondemand" may decide which speed to use
+                  within this range.
+  current CPU frequency is 1.80 GHz (asserted by call to hardware).
+  cpufreq stats: 126 MHz:0.00%, 216 MHz:0.00%, 312 MHz:0.03%, 408 MHz:0.00%, 600 MHz:1.31%, 696 MHz:0.00%, 816 MHz:0.01%, 1.01 GHz:13.07%, 1.20 GHz:9.27%, 1.42 GHz:1.64%, 1.51 GHz:2.16%, 1.61 GHz:7.23%, 1.70 GHz:24.02%, 1.80 GHz:41.26%  (115768)

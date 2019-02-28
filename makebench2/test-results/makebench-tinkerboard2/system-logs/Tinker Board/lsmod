@@ -1,0 +1,20 @@
+Module                  Size  Used by
+fuse                   98304  3
+overlay                94208  2
+zstd                   16384  4
+zram                   24576  5
+gpio_keys              20480  0
+snd_soc_hdmi_codec     16384  1
+rk_crypto              24576  0
+r8723bs               589824  0
+syscon_reboot_mode     16384  0
+reboot_mode            16384  1 syscon_reboot_mode
+dw_wdt                 16384  0
+rockchip_thermal       24576  0
+cpufreq_dt             16384  0
+thermal_sys            57344  2 rockchip_thermal,cpufreq_dt
+sch_fq_codel           20480  6
+ip_tables              24576  0
+mali_kbase            352256  0
+dw_hdmi_i2s_audio      16384  0
+realtek                16384  1

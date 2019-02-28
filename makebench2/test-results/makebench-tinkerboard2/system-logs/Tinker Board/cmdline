@@ -1,0 +1,1 @@
+earlyprintk root=UUID=5120b818-fd15-456d-b86f-f2ca05ed4d1e rootwait rootfstype=ext4 console=ttyS2,115200n8 console=tty1 panic=10 consoleblank=0 loglevel=1 ubootpart=82dd7c4b-01 usb-storage.quirks=0x2537:0x1066:u,0x2537:0x1068:u   cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory swapaccount=1

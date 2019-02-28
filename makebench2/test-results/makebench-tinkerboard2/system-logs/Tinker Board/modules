@@ -1,0 +1,19 @@
+fuse 98304 3 - Live 0x00000000
+overlay 94208 2 - Live 0x00000000
+zstd 16384 4 - Live 0x00000000
+zram 24576 5 - Live 0x00000000
+gpio_keys 20480 0 - Live 0x00000000
+snd_soc_hdmi_codec 16384 1 - Live 0x00000000
+rk_crypto 24576 0 - Live 0x00000000
+r8723bs 589824 0 - Live 0x00000000 (C)
+syscon_reboot_mode 16384 0 - Live 0x00000000
+reboot_mode 16384 1 syscon_reboot_mode, Live 0x00000000
+dw_wdt 16384 0 - Live 0x00000000
+rockchip_thermal 24576 0 - Live 0x00000000
+cpufreq_dt 16384 0 - Live 0x00000000
+thermal_sys 57344 2 rockchip_thermal,cpufreq_dt, Live 0x00000000
+sch_fq_codel 20480 6 - Live 0x00000000
+ip_tables 24576 0 - Live 0x00000000
+mali_kbase 352256 0 - Live 0x00000000
+dw_hdmi_i2s_audio 16384 0 - Live 0x00000000
+realtek 16384 1 - Live 0x00000000
