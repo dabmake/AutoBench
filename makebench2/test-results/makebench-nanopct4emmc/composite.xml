@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.6.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>makebench-nanopct4emmc</Title>
+    <LastModified>2019-02-27 11:54:48</LastModified>
+    <TestClient>Phoronix Test Suite v8.6.1 (Spydeberg)</TestClient>
+    <Description>Rockchip ARMv8 Cortex-A72 testing on Ubuntu 18.04 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>Nano PC T4 eMMC</Identifier>
+    <Hardware>Processor: Rockchip ARMv8 Cortex-A72 @ 1.42GHz (6 Cores), Motherboard: FriendlyElec NanoPC-T4, Memory: 4096MB, Disk: 16GB AJNB4R, Monitor: HP 24o</Hardware>
+    <Software>OS: Ubuntu 18.04, Kernel: 4.4.143 (aarch64), Desktop: LXDE 0.9.3, Display Server: X Server 1.19.3, Compiler: GCC 7.3.0 + Clang 6.0.0-1ubuntu2, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>pi</User>
+    <TimeStamp>2019-02-27 06:48:54</TimeStamp>
+    <TestClientVersion>8.6.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=aarch64-linux-gnu --disable-libquadmath --disable-libquadmath-support --disable-werror --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-fix-cortex-a53-843419 --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-plugin --enable-shared --enable-threads=posix --host=aarch64-linux-gnu --program-prefix=aarch64-linux-gnu- --target=aarch64-linux-gnu --with-default-libstdcxx-abi=new --with-gcc-major-version-only -v","disk-mount-options":"data=ordered,relatime,rw","cpu-scaling-governor":"cpufreq-dt performance","python":"Python 2.7.15rc1 + Python 3.6.7"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/fio-1.11.5</Identifier>
+    <Title>Flexible IO Tester</Title>
+    <AppVersion>3.1</AppVersion>
+    <Arguments>randread libaio 0 1 64k</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 64KB - Disk Target: Default Test Directory</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 eMMC</Identifier>
+        <Value>171</Value>
+        <RawString>153:173:173:173:173:173:174:172:173:173:173:173</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-rdynamic -std=gnu99 -ffast-math -include -O3 -U_FORTIFY_SOURCE -ll -lnuma -libverbs -lrt -laio -lz -lm -lpthread -ldl"},"test-run-times":"57.98:30.87:30.75:30.77:30.92:31.08:30.73:30.82:30.78:30.86:31.00:31.13"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 512M -i0 -i1 #READ</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 eMMC</Identifier>
+        <Value>1234.98</Value>
+        <RawString>1252.896484375:1388.6953125:892.294921875:1390.2158203125:1334.1533203125:1330.93359375:1393.78125:896.1513671875:901.63671875:1271.7646484375:1456.12109375:1311.05859375</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"30.29:30.90:28.54:29.07:24.52:24.95:24.48:24.85:25.44:24.43:24.33:24.76"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.9.5</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.465</AppVersion>
+    <Arguments>-r 64k -s 512M -i0 #WRITE</Arguments>
+    <Description>Record Size: 64Kb - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 eMMC</Identifier>
+        <Value>44.48</Value>
+        <RawString>44.322265625:44.5634765625:44.5478515625</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"},"test-run-times":"24.60:23.89:23.91"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/glmark2-1.1.0</Identifier>
+    <Title>GLmark2</Title>
+    <AppVersion>276</AppVersion>
+    <Arguments>-s 1920x1080</Arguments>
+    <Description>Resolution: 1920 x 1080</Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 eMMC</Identifier>
+        <Value>15</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"350.56"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/tinymembench-1.0.2</Identifier>
+    <Title>Tinymembench</Title>
+    <AppVersion>2018-05-28</AppVersion>
+    <Arguments></Arguments>
+    <Description>Standard Memcpy</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 eMMC</Identifier>
+        <Value>2760</Value>
+        <RawString>2771.1:2776.1:2734.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"1052.70:1234.35:1244.43"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/tinymembench-1.0.2</Identifier>
+    <Title>Tinymembench</Title>
+    <AppVersion>2018-05-28</AppVersion>
+    <Arguments></Arguments>
+    <Description>Standard Memset</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 eMMC</Identifier>
+        <Value>4869.00</Value>
+        <RawString>4866:4872.8:4868.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"},"test-run-times":"1052.70:1234.35:1244.43"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/numpy-1.0.5</Identifier>
+    <Title>Numpy Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description></Description>
+    <Scale>Nanoseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 eMMC</Identifier>
+        <Value>21235220</Value>
+        <RawString></RawString>
+        <JSON>{"test-run-times":"9588.86"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/x264-2.5.0</Identifier>
+    <Title>x264</Title>
+    <AppVersion>2018-09-25</AppVersion>
+    <Arguments></Arguments>
+    <Description>H.264 Video Encoding</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 eMMC</Identifier>
+        <Value>5.97</Value>
+        <RawString>6.09:5.9:5.91</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-ldl -lavformat -lavcodec -lavutil -lswscale -lm -lpthread"},"test-run-times":"98.96:101.97:101.83"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-7zip-1.7.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>16.02</AppVersion>
+    <Arguments></Arguments>
+    <Description>Compress Speed Test</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 eMMC</Identifier>
+        <Value>4014</Value>
+        <RawString>4097:4027:3917</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"},"test-run-times":"79.61:80.39:82.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/c-ray-1.2.0</Identifier>
+    <Title>C-Ray</Title>
+    <AppVersion>1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time - 4K, 16 Rays Per Pixel</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 eMMC</Identifier>
+        <Value>744.99</Value>
+        <RawString>725.697:762.119:747.154</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"},"test-run-times":"727.18:763.66:748.67"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/opencv-bench-1.0.0</Identifier>
+    <Title>OpenCV Benchmark</Title>
+    <AppVersion>3.3.0</AppVersion>
+    <Arguments></Arguments>
+    <Description></Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 eMMC</Identifier>
+        <Value>346.55</Value>
+        <RawString>358.07554197311:346.7568051815:334.8046681881</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-std=c++11 -rdynamic"},"test-run-times":"358.07:346.76:334.80"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/openssl-1.11.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion>1.1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>RSA 4096-bit Performance</Description>
+    <Scale>Signs Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Nano PC T4 eMMC</Identifier>
+        <Value>133</Value>
+        <RawString>133.1:133.1:133.1</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -O3 -lssl -lcrypto -ldl"},"test-run-times":"20.26:20.21:20.23"}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
