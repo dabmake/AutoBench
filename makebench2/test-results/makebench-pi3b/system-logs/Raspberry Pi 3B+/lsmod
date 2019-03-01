@@ -1,0 +1,45 @@
+Module                  Size  Used by
+evdev                  24576  3
+joydev                 20480  0
+fuse                  110592  3
+ipt_MASQUERADE         16384  1
+nf_nat_masquerade_ipv4    16384  1 ipt_MASQUERADE
+nf_conntrack_netlink    36864  0
+nfnetlink              16384  2 nf_conntrack_netlink
+rfcomm                 49152  4
+bnep                   20480  2
+hci_uart               36864  1
+iptable_nat            16384  1
+btbcm                  16384  1 hci_uart
+nf_conntrack_ipv4      16384  3
+serdev                 20480  1 hci_uart
+nf_defrag_ipv4         16384  1 nf_conntrack_ipv4
+bluetooth             368640  29 hci_uart,bnep,btbcm,rfcomm
+nf_nat_ipv4            16384  1 iptable_nat
+xt_addrtype            16384  2
+ecdh_generic           28672  1 bluetooth
+iptable_filter         16384  1
+xt_conntrack           16384  1
+nf_nat                 32768  2 nf_nat_masquerade_ipv4,nf_nat_ipv4
+nf_conntrack          126976  7 nf_conntrack_ipv4,ipt_MASQUERADE,nf_conntrack_netlink,nf_nat_masquerade_ipv4,xt_conntrack,nf_nat_ipv4,nf_nat
+br_netfilter           24576  0
+bridge                122880  1 br_netfilter
+stp                    16384  1 bridge
+llc                    16384  2 bridge,stp
+overlay                73728  0
+binfmt_misc            20480  1
+brcmfmac              307200  0
+brcmutil               16384  1 brcmfmac
+cfg80211              573440  1 brcmfmac
+snd_bcm2835            32768  1
+rfkill                 28672  6 bluetooth,cfg80211
+snd_pcm                98304  1 snd_bcm2835
+snd_timer              32768  1 snd_pcm
+snd                    69632  5 snd_timer,snd_bcm2835,snd_pcm
+uio_pdrv_genirq        16384  0
+uio                    20480  1 uio_pdrv_genirq
+fixed                  16384  0
+i2c_dev                16384  0
+ip_tables              24576  2 iptable_filter,iptable_nat
+x_tables               32768  5 ip_tables,iptable_filter,ipt_MASQUERADE,xt_addrtype,xt_conntrack
+ipv6                  425984  27 bridge
