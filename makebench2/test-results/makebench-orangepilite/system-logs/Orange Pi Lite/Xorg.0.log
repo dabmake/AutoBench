@@ -1,0 +1,399 @@
+
+X.Org X Server 1.18.4
+Release Date: 2016-07-19
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 4.4.0-45-generic armv7l Ubuntu
+Current Operating System: Linux OrangePI 3.4.112 #1 SMP PREEMPT Mon Nov 14 17:00:28 CST 2016 armv7l
+Kernel command line: earlyprintk=ttyS0,115200 loglevel=8 initcall_debug=0 console=ttyS0,115200 console=tty0 init=/init
+Build Date: 02 November 2016  10:05:15PM
+xorg-server 2:1.18.4-0ubuntu0.2 (For technical support please see http://www.ubuntu.com/support) 
+Current version of pixman: 0.33.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Feb 12 00:28:11 2016
+(==) Using config file: "/etc/X11/xorg.conf"
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+(==) No Layout section.  Using the first Screen section.
+(==) No screen section available. Using defaults.
+(**) |-->Screen "Default Screen Section" (0)
+(**) |   |-->Monitor "<default monitor>"
+(==) No device specified for screen "Default Screen Section".
+	Using the first device section listed.
+(**) |   |-->Device "Allwinner H3 FBDEV"
+(==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+(==) Automatically adding devices
+(==) Automatically enabling devices
+(==) Automatically adding GPU devices
+(==) Max clients allowed: 256, resource mask: 0x1fffff
+(WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/share/fonts/X11/Type1" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+	Entry deleted from font path.
+(WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+	Entry deleted from font path.
+(==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	built-ins
+(==) ModulePath set to "/usr/lib/arm-linux-gnueabihf/xorg/extra-modules,/usr/lib/xorg/extra-modules,/usr/lib/xorg/modules"
+(II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+(II) Loader magic: 0xb6f5ef70
+(II) Module ABI versions:
+	X.Org ANSI C Emulation: 0.4
+	X.Org Video Driver: 20.0
+	X.Org XInput driver : 22.1
+	X.Org Server Extension : 9.0
+(++) using VT number 7
+
+(II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+(II) xfree86: Adding drm device (/dev/dri/card0)
+(II) no primary bus or device found
+	falling back to /sys/devices/platform/mali_drm.0/drm/card0
+(II) LoadModule: "glx"
+(II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+(II) Module glx: vendor="X.Org Foundation"
+	compiled for 1.18.4, module version = 1.0.0
+	ABI class: X.Org Server Extension, version 9.0
+(==) AIGLX enabled
+(II) LoadModule: "fbturbo"
+(II) Loading /usr/lib/xorg/modules/drivers/fbturbo_drv.so
+(II) Module fbturbo: vendor="X.Org Foundation"
+	compiled for 1.18.4, module version = 0.5.1
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 20.0
+(II) FBTURBO: driver for framebuffer: fbturbo
+(WW) Falling back to old probe method for fbturbo
+(II) Loading sub module "fbdevhw"
+(II) LoadModule: "fbdevhw"
+(II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+(II) Module fbdevhw: vendor="X.Org Foundation"
+	compiled for 1.18.4, module version = 0.0.2
+	ABI class: X.Org Video Driver, version 20.0
+(II) FBTURBO(0): using /dev/fb0
+(WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+(II) FBTURBO(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+(==) FBTURBO(0): Depth 24, (==) framebuffer bpp 32
+(==) FBTURBO(0): RGB weight 888
+(==) FBTURBO(0): Default visual is TrueColor
+(==) FBTURBO(0): Using gamma correction (1.0, 1.0, 1.0)
+(II) FBTURBO(0): hardware:  (video memory: 7200kB)
+(**) FBTURBO(0): Option "fbdev" "/dev/fb0"
+(**) FBTURBO(0): Option "DRI2" "true"
+(**) FBTURBO(0): Option "SwapbuffersWait" "true"
+(II) FBTURBO(0): processor: ARM Cortex-A7
+(II) FBTURBO(0): checking modes against framebuffer device...
+(II) FBTURBO(0): checking modes against monitor...
+(--) FBTURBO(0): Virtual size is 1280x720 (pitch 1280)
+(**) FBTURBO(0):  Built-in mode "current"
+(==) FBTURBO(0): DPI set to (96, 96)
+(II) Loading sub module "fb"
+(II) LoadModule: "fb"
+(II) Loading /usr/lib/xorg/modules/libfb.so
+(II) Module fb: vendor="X.Org Foundation"
+	compiled for 1.18.4, module version = 1.0.0
+	ABI class: X.Org ANSI C Emulation, version 0.4
+(==) Depth 24 pixmap format is 32 bpp
+(II) FBTURBO(0): using backing store heuristics
+(II) FBTURBO(0): can't load 'g2d_23' kernel module
+(II) FBTURBO(0): failed to enable the use of sunxi display controller
+(II) FBTURBO(0): No sunxi-g2d hardware detected (check /dev/disp and /dev/g2d)
+(II) FBTURBO(0): G2D hardware acceleration can't be enabled
+(II) FBTURBO(0): enabled VFP/NEON optimizations
+(==) FBTURBO(0): Backing store enabled
+(==) FBTURBO(0): DPMS enabled
+(II) FBTURBO(0): failed to enable hardware cursor
+(II) FBTURBO(0): can't load 'sunxi_cedar_mod' kernel module
+(II) Loading sub module "dri2"
+(II) LoadModule: "dri2"
+(II) Module "dri2" already built-in
+(II) FBTURBO(0): display controller hardware overlays can't be used for DRI2
+(II) FBTURBO(0): Wait on SwapBuffers? enabled
+(II) FBTURBO(0): [DRI2] Setup complete
+(II) FBTURBO(0): [DRI2]   DRI driver: lima
+(II) FBTURBO(0): using DRI2 integration for Mali GPU (UMP buffers)
+(II) FBTURBO(0): Mali binary drivers can only accelerate EGL/GLES
+(II) FBTURBO(0): so AIGLX/GLX is expected to fail or fallback to software
+(==) RandR enabled
+(II) SELinux: Disabled on system
+(EE) AIGLX error: dlopen of /usr/lib/arm-linux-gnueabihf/dri/lima_dri.so failed (/usr/lib/arm-linux-gnueabihf/dri/lima_dri.so: cannot open shared object file: No such file or directory)
+(EE) AIGLX: reverting to software rendering
+(II) AIGLX: enabled GLX_MESA_copy_sub_buffer
+(II) AIGLX: Loaded and initialized swrast
+(II) GLX: Initialized DRISWRAST GL provider for screen 0
+(II) config/udev: Adding input device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard (/dev/input/event1)
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Applying InputClass "evdev pointer catchall"
+(II) LoadModule: "evdev"
+(II) Loading /usr/lib/xorg/modules/input/evdev_drv.so
+(II) Module evdev: vendor="X.Org Foundation"
+	compiled for 1.18.1, module version = 2.10.1
+	Module class: X.Org XInput Driver
+	ABI class: X.Org XInput driver, version 22.1
+(II) Using input driver 'evdev' for 'RAPOO Rapoo 2.4G Wireless Touchpad Keyboard'
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: always reports core events
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Device: "/dev/input/event1"
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Vendor 0x24ae Product 0x1006
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found 9 mouse buttons
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found scroll wheel(s)
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found relative axes
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found x and y relative axes
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Configuring as mouse
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Adding scrollwheel support
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: YAxisMapping: buttons 4 and 5
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+(**) Option "config_info" "udev:/sys/devices/platform/sunxi-ohci.2/usb6/6-1/6-1:1.0/input/input1/event1"
+(II) XINPUT: Adding extended input device "RAPOO Rapoo 2.4G Wireless Touchpad Keyboard" (type: MOUSE, id 6)
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: initialized for relative axes.
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) keeping acceleration scheme 1
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration profile 0
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration factor: 2.000
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration threshold: 4
+(II) config/udev: Adding input device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard (/dev/input/mouse1)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard (/dev/input/event2)
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Applying InputClass "evdev keyboard catchall"
+(II) Using input driver 'evdev' for 'RAPOO Rapoo 2.4G Wireless Touchpad Keyboard'
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: always reports core events
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Device: "/dev/input/event2"
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Vendor 0x24ae Product 0x1006
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found 1 mouse buttons
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found scroll wheel(s)
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found relative axes
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Forcing relative x/y axes to exist.
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found absolute axes
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Forcing absolute x/y axes to exist.
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found keys
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Configuring as mouse
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Configuring as keyboard
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Adding scrollwheel support
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: YAxisMapping: buttons 4 and 5
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+(**) Option "config_info" "udev:/sys/devices/platform/sunxi-ohci.2/usb6/6-1/6-1:1.1/input/input2/event2"
+(II) XINPUT: Adding extended input device "RAPOO Rapoo 2.4G Wireless Touchpad Keyboard" (type: KEYBOARD, id 7)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_model" "pc105"
+(**) Option "xkb_layout" "us"
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: initialized for relative axes.
+(WW) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: ignoring absolute axes.
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) keeping acceleration scheme 1
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration profile 0
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration factor: 2.000
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration threshold: 4
+(II) config/udev: Adding input device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard (/dev/input/event3)
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Applying InputClass "evdev keyboard catchall"
+(II) Using input driver 'evdev' for 'RAPOO Rapoo 2.4G Wireless Touchpad Keyboard'
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: always reports core events
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Device: "/dev/input/event3"
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Vendor 0x24ae Product 0x1006
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found keys
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Configuring as keyboard
+(**) Option "config_info" "udev:/sys/devices/platform/sunxi-ohci.2/usb6/6-1/6-1:1.2/input/input3/event3"
+(II) XINPUT: Adding extended input device "RAPOO Rapoo 2.4G Wireless Touchpad Keyboard" (type: KEYBOARD, id 8)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_model" "pc105"
+(**) Option "xkb_layout" "us"
+(II) config/udev: Adding input device vmouse (/dev/input/event0)
+(**) vmouse: Applying InputClass "evdev pointer catchall"
+(II) Using input driver 'evdev' for 'vmouse'
+(**) vmouse: always reports core events
+(**) evdev: vmouse: Device: "/dev/input/event0"
+(--) evdev: vmouse: Vendor 0x2 Product 0x1
+(--) evdev: vmouse: Found 15 mouse buttons
+(--) evdev: vmouse: Found scroll wheel(s)
+(--) evdev: vmouse: Found relative axes
+(--) evdev: vmouse: Found x and y relative axes
+(II) evdev: vmouse: Configuring as mouse
+(II) evdev: vmouse: Adding scrollwheel support
+(**) evdev: vmouse: YAxisMapping: buttons 4 and 5
+(**) evdev: vmouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+(**) Option "config_info" "udev:/sys/devices/virtual/input/input0/event0"
+(II) XINPUT: Adding extended input device "vmouse" (type: MOUSE, id 9)
+(II) evdev: vmouse: initialized for relative axes.
+(**) vmouse: (accel) keeping acceleration scheme 1
+(**) vmouse: (accel) acceleration profile 0
+(**) vmouse: (accel) acceleration factor: 2.000
+(**) vmouse: (accel) acceleration threshold: 4
+(II) config/udev: Adding input device vmouse (/dev/input/mouse0)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device sunxi-ths (/dev/input/event4)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: removing device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Close
+(II) UnloadModule: "evdev"
+(II) config/udev: removing device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Close
+(II) UnloadModule: "evdev"
+(II) config/udev: removing device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Close
+(II) UnloadModule: "evdev"
+(II) config/udev: Adding input device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard (/dev/input/mouse1)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard (/dev/input/event1)
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Applying InputClass "evdev pointer catchall"
+(II) Using input driver 'evdev' for 'RAPOO Rapoo 2.4G Wireless Touchpad Keyboard'
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: always reports core events
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Device: "/dev/input/event1"
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Vendor 0x24ae Product 0x1006
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found 9 mouse buttons
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found scroll wheel(s)
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found relative axes
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found x and y relative axes
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Configuring as mouse
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Adding scrollwheel support
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: YAxisMapping: buttons 4 and 5
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+(**) Option "config_info" "udev:/sys/devices/platform/sunxi-ohci.2/usb6/6-1/6-1:1.0/input/input5/event1"
+(II) XINPUT: Adding extended input device "RAPOO Rapoo 2.4G Wireless Touchpad Keyboard" (type: MOUSE, id 6)
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: initialized for relative axes.
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) keeping acceleration scheme 1
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration profile 0
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration factor: 2.000
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration threshold: 4
+(II) config/udev: Adding input device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard (/dev/input/event3)
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Applying InputClass "evdev keyboard catchall"
+(II) Using input driver 'evdev' for 'RAPOO Rapoo 2.4G Wireless Touchpad Keyboard'
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: always reports core events
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Device: "/dev/input/event3"
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Vendor 0x24ae Product 0x1006
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found keys
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Configuring as keyboard
+(**) Option "config_info" "udev:/sys/devices/platform/sunxi-ohci.2/usb6/6-1/6-1:1.2/input/input7/event3"
+(II) XINPUT: Adding extended input device "RAPOO Rapoo 2.4G Wireless Touchpad Keyboard" (type: KEYBOARD, id 7)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_model" "pc105"
+(**) Option "xkb_layout" "us"
+(WW) Option "xkb_variant" requires a string value
+(WW) Option "xkb_options" requires a string value
+(II) config/udev: Adding input device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard (/dev/input/event2)
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Applying InputClass "evdev keyboard catchall"
+(II) Using input driver 'evdev' for 'RAPOO Rapoo 2.4G Wireless Touchpad Keyboard'
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: always reports core events
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Device: "/dev/input/event2"
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Vendor 0x24ae Product 0x1006
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found 1 mouse buttons
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found scroll wheel(s)
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found relative axes
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Forcing relative x/y axes to exist.
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found absolute axes
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Forcing absolute x/y axes to exist.
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found keys
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Configuring as mouse
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Configuring as keyboard
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Adding scrollwheel support
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: YAxisMapping: buttons 4 and 5
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+(**) Option "config_info" "udev:/sys/devices/platform/sunxi-ohci.2/usb6/6-1/6-1:1.1/input/input6/event2"
+(II) XINPUT: Adding extended input device "RAPOO Rapoo 2.4G Wireless Touchpad Keyboard" (type: KEYBOARD, id 8)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_model" "pc105"
+(**) Option "xkb_layout" "us"
+(WW) Option "xkb_variant" requires a string value
+(WW) Option "xkb_options" requires a string value
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: initialized for relative axes.
+(WW) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: ignoring absolute axes.
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) keeping acceleration scheme 1
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration profile 0
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration factor: 2.000
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration threshold: 4
+(II) config/udev: removing device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Close
+(II) UnloadModule: "evdev"
+(II) config/udev: removing device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Close
+(II) UnloadModule: "evdev"
+(II) config/udev: removing device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Close
+(II) UnloadModule: "evdev"
+(II) config/udev: Adding input device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard (/dev/input/mouse1)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard (/dev/input/event3)
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Applying InputClass "evdev keyboard catchall"
+(II) Using input driver 'evdev' for 'RAPOO Rapoo 2.4G Wireless Touchpad Keyboard'
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: always reports core events
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Device: "/dev/input/event3"
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Vendor 0x24ae Product 0x1006
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found keys
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Configuring as keyboard
+(**) Option "config_info" "udev:/sys/devices/platform/sunxi-ohci.2/usb6/6-1/6-1:1.2/input/input10/event3"
+(II) XINPUT: Adding extended input device "RAPOO Rapoo 2.4G Wireless Touchpad Keyboard" (type: KEYBOARD, id 6)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_model" "pc105"
+(**) Option "xkb_layout" "us"
+(WW) Option "xkb_variant" requires a string value
+(WW) Option "xkb_options" requires a string value
+(II) config/udev: Adding input device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard (/dev/input/event2)
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Applying InputClass "evdev keyboard catchall"
+(II) Using input driver 'evdev' for 'RAPOO Rapoo 2.4G Wireless Touchpad Keyboard'
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: always reports core events
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Device: "/dev/input/event2"
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Vendor 0x24ae Product 0x1006
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found 1 mouse buttons
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found scroll wheel(s)
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found relative axes
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Forcing relative x/y axes to exist.
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found absolute axes
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Forcing absolute x/y axes to exist.
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found keys
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Configuring as mouse
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Configuring as keyboard
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Adding scrollwheel support
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: YAxisMapping: buttons 4 and 5
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+(**) Option "config_info" "udev:/sys/devices/platform/sunxi-ohci.2/usb6/6-1/6-1:1.1/input/input9/event2"
+(II) XINPUT: Adding extended input device "RAPOO Rapoo 2.4G Wireless Touchpad Keyboard" (type: KEYBOARD, id 7)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_model" "pc105"
+(**) Option "xkb_layout" "us"
+(WW) Option "xkb_variant" requires a string value
+(WW) Option "xkb_options" requires a string value
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: initialized for relative axes.
+(WW) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: ignoring absolute axes.
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) keeping acceleration scheme 1
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration profile 0
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration factor: 2.000
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration threshold: 4
+(II) config/udev: Adding input device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard (/dev/input/event1)
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Applying InputClass "evdev pointer catchall"
+(II) Using input driver 'evdev' for 'RAPOO Rapoo 2.4G Wireless Touchpad Keyboard'
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: always reports core events
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Device: "/dev/input/event1"
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Vendor 0x24ae Product 0x1006
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found 9 mouse buttons
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found scroll wheel(s)
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found relative axes
+(--) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Found x and y relative axes
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Configuring as mouse
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Adding scrollwheel support
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: YAxisMapping: buttons 4 and 5
+(**) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+(**) Option "config_info" "udev:/sys/devices/platform/sunxi-ohci.2/usb6/6-1/6-1:1.0/input/input8/event1"
+(II) XINPUT: Adding extended input device "RAPOO Rapoo 2.4G Wireless Touchpad Keyboard" (type: MOUSE, id 8)
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: initialized for relative axes.
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) keeping acceleration scheme 1
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration profile 0
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration factor: 2.000
+(**) RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: (accel) acceleration threshold: 4
+(II) config/udev: removing device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Close
+(II) UnloadModule: "evdev"
+(II) config/udev: removing device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Close
+(II) UnloadModule: "evdev"
+(II) config/udev: removing device RAPOO Rapoo 2.4G Wireless Touchpad Keyboard
+(II) evdev: RAPOO Rapoo 2.4G Wireless Touchpad Keyboard: Close
+(II) UnloadModule: "evdev"

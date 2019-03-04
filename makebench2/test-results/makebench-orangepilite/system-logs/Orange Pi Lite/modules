@@ -1,0 +1,7 @@
+8189fs 1043383 0 - Live 0x00000000
+gpio_sunxi 8265 0 - Live 0x00000000
+8189es 1069830 0 - Live 0x00000000
+mali_drm 6634 1 - Live 0x00000000 (O)
+drm 180475 2 mali_drm, Live 0x00000000
+mali 215601 0 - Live 0x00000000 (O)
+ump 41913 3 mali, Live 0x00000000 (O)
